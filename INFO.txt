@@ -43,3 +43,33 @@ body {
 }
 
 ======================================================
+
+============COLORS===========================
+-------btn----------------------------
+
+#000000 text
+#0A8817 text-hero bg hover/focus
+#FCFCFC text text-hero
+#131313 text стрілочки
+#ABABAB text-hero bg disabled
+#F8D24E text-hero bg default
+
+-------svg----------------------------
+
+transpatent fill
+#F8D24E bg
+#FCFCFC fill
+
+------------hero------------------------
+
+#84A278 background
+#131313 text
+#FCFCFC text стрілочки
+
+----------products--------------------
+
+#131313 text стрілочки
+#AEC6A5 bg1
+#D9D9D9 bg1-oval-gradient
+#EFD478 bg2 
+#D6936D bg3
