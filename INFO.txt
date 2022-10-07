@@ -1,0 +1,45 @@
+_reset.scss
+
+body {
+  //----------------- Основний шрифт ----------------- /
+
+  font-family: 'Montserrat', serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.76;
+  letter-spacing: 0.04em;
+
+  color: #131313;
+  //   color: #fcfcfc;
+
+  //------------------ Основниий фон ----------------- /
+
+  background-color: white;
+}
+
+========================================================
+
+<h2 class="products__title">products</h2>
+<h2 class="about__title">how it’s made?</h2>
+
+!!! додати клас section__title
+
+.section { 
+  
+  //це для мобільних. для інших перевизначити
+  &__title {
+    font-family: 'Seymour One';
+    font-weight: 400;
+    font-size: 30px;
+    // line-height: 38px;
+    line-height: 1.27;
+
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: #131313;
+  }
+}
+
+======================================================
