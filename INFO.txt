@@ -44,7 +44,26 @@ body {
 
 ======================================================
 
-============COLORS===========================
+============== Приклад Репети ====================
+
+.example .background {
+  height: 240px;
+  // ❗️❗️❗️ The path to images from a SASS file
+  // is always the same as from the css folder.
+  background-image: url('../images/logo.png');
+  background-size: cover;
+  background-position: center;
+}
+
+<!--
+    ❗️❗️❗️ The path to images from the HTML partial
+    is the same as from the index.html file
+  -->
+  <img src="images/logo.png" alt="" width="320" />
+
+
+
+============ COLORS ===========================
 -------btn----------------------------
 
 #000000 text
