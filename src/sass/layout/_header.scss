@@ -1,0 +1,52 @@
+@media screen and (min-width: 100px) {
+  .header__container {
+    display: flex;
+    align-items: center;
+  }
+
+  .header__logo {
+    padding-top: 12px;
+  }
+
+  .header__list {
+    display: none;
+  }
+  .header__nav {
+    margin: 0 auto;
+  }
+
+  .header__burger {
+    padding-top: 16px;
+    border: none;
+  }
+  .header__btn {
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header__logo {
+    padding-top: 20px;
+  }
+
+  .header__burger {
+    padding-top: 32px;
+    margin-right: 32px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header__list {
+    display: flex;
+    gap: 27px;
+  }
+  .header__logo {
+    padding-top: 8px;
+  }
+
+  .header__burger {
+    display: none;
+  }
+}
