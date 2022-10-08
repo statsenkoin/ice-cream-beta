@@ -38,10 +38,6 @@
     display: none;
   }
 
-  .header__burger {
-    padding-top: 16px;
-    border: none;
-  }
   .header__btn {
     @media screen and (max-width: 767px) {
       display: none;
@@ -55,7 +51,6 @@
   }
 
   .header__burger {
-    padding-top: 32px;
     margin-right: 32px;
   }
 }

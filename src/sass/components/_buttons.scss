@@ -13,6 +13,7 @@
   line-height: 0;
   border: none;
   padding: 0;
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .header__btn {
@@ -26,6 +27,7 @@
    {
     background: rgba(10, 136, 23, 1);
     
+
   }
     &:focus{
       color: rgba(252, 252, 252, 1);
@@ -65,7 +67,15 @@
 
   text-decoration-line: underline;
 
+
   color: #f8d24e;
+}
+
+
+.hero__arrow {
+  border: none;
+
+  background-color: rgba(0, 0, 0, 0);
 }
 
 
@@ -125,6 +135,7 @@
    {
     background: rgba(10, 136, 23, 1);
     
+
   }
     &:focus{
       color: rgba(252, 252, 252, 1);
