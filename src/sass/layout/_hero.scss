@@ -24,12 +24,23 @@
 
 @media screen and (min-width: 768px) {
   .hero__title {
-    max-width: 162px;
     padding-top: 110px;
+    width: 100%;
+    max-width: 181px;
     // @include font(38px, 400, 48px);
     font-weight: 400;
     font-size: 18px;
     line-height: 23px;
+  }
+  .hero__subtitle {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      width: 100%;
+      max-width: 182px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 13px;
+      color: aqua;
+    }
   }
   .hero__box {
     position: absolute;
@@ -67,6 +78,13 @@
     margin-top: 20px;
   }
 
+  .hero__position {
+    position: absolute;
+    top: 278px;
+    left: 216px;
+    margin-left: 33px;
+  }
+
   .hero__lead {
     width: 100%;
     max-width: 151px;
@@ -75,6 +93,15 @@
     line-height: 17px;
 
     color: #fcfcfc;
+  }
+
+  .hero__icon {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 40px;
+
+    border: 2px;
   }
 }
 
@@ -111,7 +138,6 @@
     margin-top: 28px;
   }
   .hero__position {
-    position: absolute;
     top: 441px;
     left: 256px;
     margin-left: 14px;
@@ -122,7 +148,7 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
-    margin-bottom: 32px;
+
     // background-position: left 256px top 441px;
   }
 }
@@ -131,7 +157,7 @@
   .hero__box {
     display: none;
   }
-  .hero__lead {
+  .hero__position {
     display: none;
   }
 }
@@ -139,17 +165,76 @@
 // ============= overlay ==========
 .overlay {
   width: 100%;
-  max-width: 1200px;
-  height: 664px;
+}
+@media screen and (max-width: 767px) {
+  .overlay {
+    max-width: 480px;
+    height: 502px;
+    background-image: url(../images/header/ice.png),
+      url(../images/header/ellips.png);
 
-  background-image: url(../images/header/desktop/ice-cream.png),
-    url(../images/header/desktop/ice.png),
-    // (to right, rgba(252, 252, 252, 0.44), rgba(252, 252, 252, 0.44)),
-    url(../images/header/desktop/rectangle.png),
-    url(../images/header/desktop/ellipse.png);
+    background-size: 157px 207px, 328px 50px;
+    background-repeat: no-repeat;
+    background-position: left 82px top 295px, top 452px left -8px;
+  }
+}
 
-  background-size: 225px, 447px 561px, 477px 590px, 1200px 384px;
-  background-repeat: no-repeat;
-  background-position: left 17px top 374px, left 651px top 103px,
-    top 103px left 651px, left 1px top 280px;
+// @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+//   screen and (min-resolution: 192dpi) and (max-width: 767px),
+//   screen and (min-resolution: 2dppx) and (max-width: 767px) {
+//   // .overlay {}
+// }
+
+@media screen and (min-width: 768px) {
+  .overlay {
+    max-width: 768px;
+    height: 415px;
+    background-image: url(../images/header/tablet/ice-cream.png),
+      url(../images/header/tablet/ice.png),
+      url(../images/header/tablet/ellipse.png);
+
+    background-size: 152px, 257px 325px, 768px 67px;
+    background-repeat: no-repeat;
+    background-position: left 32px top 250px, left 418px top 90px,
+      top 347px left 0;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .overlay {
+    background-image: url(../images/header/tablet/ice-cream@2x.png),
+      url(../images/header/tablet/ice@2x.png),
+      url(../images/header/tablet/ellipse@2x.png);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .overlay {
+    max-width: 1200px;
+    height: 664px;
+    background-image: url(../images/header/desktop/ice-cream.png),
+      url(../images/header/desktop/ice.png),
+      // (to right, rgba(252, 252, 252, 0.44), rgba(252, 252, 252, 0.44)),
+      url(../images/header/desktop/rectangle.png),
+      url(../images/header/desktop/ellipse.png);
+
+    background-size: 225px, 447px 561px, 477px 590px, 1200px 384px;
+    background-repeat: no-repeat;
+    background-position: left 17px top 374px, left 651px top 103px,
+      top 103px left 651px, left 1px top 280px;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+  screen and (min-resolution: 192dpi) and (min-width: 1200px),
+  screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .overlay {
+    background-image: url(../images/header/desktop/ice-cream@2x.png),
+      url(../images/header/desktop/ice@2x.png),
+      // (to right, rgba(252, 252, 252, 0.44), rgba(252, 252, 252, 0.44)),
+      url(../images/header/desktop/rectangle@2x.png),
+      url(../images/header/desktop/ellipse@2x.png);
+  }
 }
