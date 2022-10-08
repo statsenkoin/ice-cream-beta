@@ -1,0 +1,123 @@
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.section__title {
+  font-family: "Seymour One";
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.27;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #131313;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 320px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+.header__burger {
+  line-height: 0;
+  border: none;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.header__btn {
+  border: none;
+  border-radius: 10px;
+  padding: 12px 34px;
+  width: 152px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  background: rgb(248, 210, 78);
+  color: rgb(19, 19, 19);
+  cursor: pointer;
+}
+.header__btn:hover, .header__btn:focus {
+  background: rgb(10, 136, 23);
+  color: rgb(252, 252, 252);
+}
+
+.hero__btn {
+  border: 2px solid #f8d24e;
+  border-radius: 10px;
+  padding: 12px 0;
+  width: 134px;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.28;
+  background: rgb(132, 161, 120);
+  color: rgb(19, 19, 19);
+  cursor: pointer;
+}
+.hero__btn:hover, .hero__btn:focus {
+  border-color: rgb(10, 136, 23);
+  color: rgb(252, 252, 252);
+}
+
+.hero__btn-link {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #f8d24e;
+}
+
+.hero__arrow {
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.products__button {
+  border: 20px solid tomato;
+  background-color: black;
+}
+
+.about__btn {
+  border: none;
+  border-radius: 10px;
+  padding: 12px 34px;
+  width: 152px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  background: rgb(248, 210, 78);
+  color: rgb(19, 19, 19);
+  cursor: pointer;
+}
+.about__btn:hover, .about__btn:focus {
+  background: rgb(10, 136, 23);
+  color: rgb(252, 252, 252);
+}/*# sourceMappingURL=index.css.map */
