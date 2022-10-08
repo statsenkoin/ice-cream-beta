@@ -20,7 +20,7 @@ body {
 ========================================================
 
 <h2 class="products__title">products</h2>
-<h2 class="about__title">how it’s made?</h2>
+<h2 class="about__title section__title">how it’s made?</h2>
 
 !!! додати клас section__title
 
