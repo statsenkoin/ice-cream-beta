@@ -1,7 +1,8 @@
 .header__burger {
-line-height: 0;
-    border: none;
-    padding: 0;
+  line-height: 0;
+  border: none;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .header__btn{
@@ -25,9 +26,8 @@ border: none;
 
     &:focus {
     color: rgba(252, 252, 252, 1);
-    }
+  }
 }
-
 
 // HERO //
 
@@ -65,21 +65,21 @@ align-items: center;
 text-align: center;
 text-decoration-line: underline;
 
-color: #F8D24E;
+  color: #f8d24e;
 }
 
-.hero__arrow{
-    border: none;
-    background-color: tomato;
+.hero__arrow {
+  border: none;
+
+  background-color: rgba(0, 0, 0, 0);
 }
 
 // PRODUCTS //
 
-.products__button{
-    border: 20px solid tomato;
-    background-color: black;
+.products__button {
+  border: 20px solid tomato;
+  background-color: black;
 }
-
 
 // ABOUT //
 
@@ -104,6 +104,5 @@ color: #F8D24E;
 
     &:focus{
     color: rgba(252, 252, 252, 1);
-    }
+  }
 }
-
