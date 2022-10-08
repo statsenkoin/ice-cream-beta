@@ -1,3 +1,14 @@
+.button{
+  border: none;
+  padding: 12px 34px;
+  font-weight: 600;
+  font-size: 14px;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.21;
+  border-radius: 10px;
+}
+
 .header__burger {
   line-height: 0;
   border: none;
@@ -5,74 +16,68 @@
   background-color: rgba(0, 0, 0, 0);
 }
 
-.header__btn{
-border: none;
-    border-radius: 10px;
-    padding: 12px 34px;
-    width: 152px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 1.21;
-    background: rgba(248, 210, 78, 1);
-    color: rgba(19, 19, 19, 1);
-    cursor: pointer;
+.header__btn {
+  width: 152px;
+  display: flex;
+  background: rgba(248, 210, 78, 1);
+  color: rgba(19, 19, 19, 1);
+  cursor: pointer;
 
-    &:hover {
+  &:hover
+   {
     background: rgba(10, 136, 23, 1);
-    }
+    
 
-    &:focus {
-    color: rgba(252, 252, 252, 1);
   }
+    &:focus{
+      color: rgba(252, 252, 252, 1);
+    }
 }
 
 // HERO //
 
-.hero__btn{
-    border: 2px solid #F8D24E;
-    border-radius: 10px;
-    padding: 12px 0;
-    width: 134px;
-    
-    justify-content: center;
-    align-items: center;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 1.28;
-    background: rgba(132, 161, 120, 1);
-    color: rgba(19, 19, 19, 1);
-    cursor: pointer;
+.hero__btn {
+  border: 2px solid #f8d24e;
+  padding: 12px 0;
+  width: 134px;
+  line-height: 1.28;
+  background: rgba(132, 161, 120, 1);
+  color: rgba(19, 19, 19, 1);
+  cursor: pointer;
 
-    &:hover{
+  &:hover
+   {
     border-color: rgba(10, 136, 23, 1);
-
-    }
+    
+  }
 
     &:focus{
-        color: rgba(252, 252, 252, 1);
+  color: rgba(252, 252, 252, 1);
+    }
+
+    @media screen and(max-width: 767px) {
+      min-width: 62px;
+      line-height: 1.25;
+      border-radius: 8px;
+      padding: 7px 0;
     }
 }
 
-.hero__btn-link{
-border: none;
-font-weight: 600;
-font-size: 14px;
-line-height: 1.21;
-align-items: center;
-text-align: center;
-text-decoration-line: underline;
+.hero__btn-link {
+
+  text-decoration-line: underline;
+
 
   color: #f8d24e;
 }
+
 
 .hero__arrow {
   border: none;
 
   background-color: rgba(0, 0, 0, 0);
 }
+
 
 // PRODUCTS //
 
@@ -83,26 +88,114 @@ text-decoration-line: underline;
 
 // ABOUT //
 
-.about__btn{
-    border: none;
-    border-radius: 10px;
-    padding: 12px 34px;
-    width: 152px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 1.21;
-    background: rgba(248, 210, 78, 1);
-    color: rgba(19, 19, 19, 1);
-    cursor: pointer;
+.about__btn {
 
-    &:hover {
-    background: rgba(10, 136, 23, 1);
-    }
+  display: flex;
+  background: rgba(248, 210, 78, 1);
+  color: rgba(19, 19, 19, 1);
+  cursor: pointer;
+
+  &:hover
+  {
+  background: rgba(10, 136, 23, 1);
+    
+  }
 
     &:focus{
-    color: rgba(252, 252, 252, 1);
+  color: rgba(252, 252, 252, 1);
+    }
+}
+
+
+
+// CLOSE-BTN//
+
+.close-btn{
+  position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0;
+    padding: 0;
+    line-height: 0;
+
+    @media screen and (max-width: 767px){
+      top: 8px;
+      right: 8px;
+    }
   }
+
+  // SUBMIT //
+  .submit__btn{
+  background: rgba(248, 210, 78, 1);
+  color: rgba(19, 19, 19, 1);
+  cursor: pointer;
+
+  &:hover
+   {
+    background: rgba(10, 136, 23, 1);
+    
+
+  }
+    &:focus{
+      color: rgba(252, 252, 252, 1);
+    }
+}
+ 
+
+// OPEN MAP //
+
+.open-map__btn{
+  width: 145px;
+  background: rgba(248, 210, 78, 1);
+  color: rgba(19, 19, 19, 1);
+  cursor: pointer;
+
+  &:hover
+   {
+    background: rgba(10, 136, 23, 1);
+    
+  }
+    &:focus{
+      color: rgba(252, 252, 252, 1);
+    }
+}
+
+
+// FOOTER BTN //
+
+.footer__btn{
+  width: 196px;
+  background: rgba(248, 210, 78, 1);
+  color: rgba(19, 19, 19, 1);
+  cursor: pointer;
+
+  &:hover
+   {
+    background: rgba(10, 136, 23, 1);
+    
+  }
+    &:focus{
+      color: rgba(252, 252, 252, 1);
+    }
+}
+
+.footer__btn-link{
+ border: 2px solid #f8d24e;
+  padding: 12px 0;
+  width: 196px;
+  line-height: 1.28;
+  background: rgba(132, 161, 120, 1);
+  color: rgba(19, 19, 19, 1);
+  cursor: pointer;
+
+  &:hover
+   {
+    border-color: rgba(10, 136, 23, 1);
+    
+  }
+
+    &:focus{
+  color: rgba(252, 252, 252, 1);
+    }
 }
