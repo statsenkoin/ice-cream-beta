@@ -1,65 +1,134 @@
-.hero__container {
-  background-color: #84a278;
-  position: relative;
+@media screen and (min-width: 320px) {
+  .hero__container {
+    background-color: #84a278;
+    position: relative;
+    max-height: 664px;
+  }
+
+  .hero__title {
+    width: 100%;
+    max-width: 247px;
+
+    padding-top: 110px;
+    // @include font(26px, 400, 33px);
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 33px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: #fcfcfc;
+  }
 }
-.hero__title {
+
+@media screen and (min-width: 768px) {
+  .hero__title {
+    max-width: 162px;
+    padding-top: 110px;
+    // @include font(38px, 400, 48px);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+  }
+  .hero__box {
+    position: absolute;
+
+    top: 0;
+    right: 0;
+    padding-top: 94px;
+    padding-right: 32px;
+  }
+  .hero__text {
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 34px;
+    /* identical to box height */
+
+    text-align: right;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: #131313;
+  }
+
+  .hero__desc {
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 10px;
+
+    text-align: right;
+    color: #fcfcfc;
+  }
+  .hero__lead {
+    width: 100%;
+    max-width: 151px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 17px;
+
+    color: #fcfcfc;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    max-width: 367px;
+    padding-top: 118px;
+    // @include font(38px, 400, 48px);
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 48px;
+  }
+
+  .hero__box {
+    padding-top: 126px;
+    padding-right: 16px;
+  }
+
+  .hero__text {
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 56px;
+  }
+  .hero__desc {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .hero__btn {
+    margin-top: 28px;
+  }
+
+  .hero__lead {
+    max-width: 200px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    // background-position: left 256px top 441px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hero__box {
+    display: none;
+  }
+  .hero__lead {
+    display: none;
+  }
+}
+
+// ============= overlay ==========
+.overlay {
   width: 100%;
-  max-width: 367px;
+  max-width: 1200px;
+  height: 664px;
 
-  padding-top: 118px;
+  background-image: url(../images/header/ellipse.png),
+    url(../images/header/ice-cream.png), url(../images/header/ice.png);
 
-  font-weight: 400;
-  font-size: 38px;
-  line-height: 48px;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-
-  color: #fcfcfc;
-}
-
-.hero__box {
-  position: absolute;
-
-  top: 0;
-  right: 0;
-  padding-top: 126px;
-  padding-right: 16px;
-}
-
-.hero__text {
-  font-weight: 900;
-  font-size: 46px;
-  line-height: 56px;
-  /* identical to box height */
-
-  text-align: right;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-
-  color: #131313;
-}
-.hero__desc {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 17px;
-  /* identical to box height */
-
-  text-align: right;
-
-  color: #fcfcfc;
-}
-
-.hero__btn {
-  margin-top: 28px;
-}
-
-.hero__lead {
-  width: 100%;
-  max-width: 200px;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 140%;
-  /* or 140% */
-
-  color: #fcfcfc;
+  background-size: 1200px 384px, 225px, 484px 590px;
+  background-repeat: no-repeat;
+  background-position: left 1px top 280px, left 17px top 374px,
+    top 103px left 651px;
 }
