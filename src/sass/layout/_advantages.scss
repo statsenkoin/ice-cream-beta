@@ -1,0 +1,25 @@
+.advantages {
+  background-color: #84a178;
+  text-align: center;
+}
+.advantages__text {
+  font-size: 12px;
+  letter-spacing: 0.02em;
+}
+.advantages__suptitle {
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  text-transform: uppercase;
+  @media screen and (min-width: 768px) {
+    font-family: 'Montserrat';
+    font-size: 48px;
+    line-height: 1.23;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 58px;
+    line-height: 1.22;
+  }
+}
