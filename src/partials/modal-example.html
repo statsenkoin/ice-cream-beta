@@ -1,18 +1,29 @@
-<!-- Елементи для виклику модальних вікон можуть бути будь-які -->
+<!-- =========== Для кнопки відкриття додати  =============== -->
+<!-- class="js-open-modal" data-modal="імя_секціі" -->
+
+<!-- Елементи (a, button svg) для виклику модальних вікон можуть бути будь-які -->
 
 <a href="#" class="js-open-modal" data-modal="1">Відкрити вікно 1</a>
-<a href="#" class="js-open-modal" data-modal="2">Відкрити вікно 2</a>
-<button type="button" class="js-open-modal" data-modal="2">btn1</button>
+<button type="button" class="js-open-modal" data-modal="buy-now">btn1</button>
+
+<!-- ======================================================= -->
+
+<!-- =========== Модальне вікно =================== -->
 
 <!-- Підложка під модальним вікном -->
+
 <div class="modal-overlay js-overlay-modal"></div>
 
-<!-- Модальних вікно -->
+<!-- Модальне вікно -->
 
 <div data-modal="2" class="modal">
   <!--   Svg іконка для закриття вікна  -->
   <svg class="modal__cross js-modal-close" width="16" height="16">
     <use href="./images/svg/icons.svg#icon-cross"></use>
   </svg>
-  <div></div>
+  <div>
+    <!-- Сюди пишемо розмітку -->
+  </div>
 </div>
+
+<!-- =========== /Модальне вікно =================== -->
