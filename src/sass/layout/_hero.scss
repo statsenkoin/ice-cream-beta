@@ -1,28 +1,26 @@
-@media screen and (min-width: 320px) {
-  .hero__container {
-    background-color: #84a278;
-    position: relative;
-    height: 502px;
-  }
+.hero__container {
+  background-color: #84a278;
+  position: relative;
+  height: 502px;
+}
 
-  .hero__title {
-    font-family: Seymour One;
-    width: 100%;
-    max-width: 247px;
+.hero__title {
+  font-family: Seymour One;
+  width: 100%;
+  max-width: 247px;
 
-    padding-top: 110px;
-    // @include font(26px, 400, 33px);
-    font-weight: 400;
-    font-size: 26px;
-    line-height: 33px;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
+  padding-top: 110px;
+  // @include font(26px, 400, 33px);
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 33px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 
-    color: #fcfcfc;
-  }
-  .hero__btn {
-    margin-top: 32px;
-  }
+  color: #fcfcfc;
+}
+.hero__btn {
+  margin-top: 32px;
 }
 
 @media screen and (min-width: 768px) {
@@ -43,9 +41,8 @@
       width: 100%;
       max-width: 182px;
       font-weight: 400;
-      font-size: 16px;
-      line-height: 13px;
-      color: aqua;
+      font-size: 24px;
+      line-height: 27px;
     }
   }
   .hero__box {
