@@ -11,5 +11,10 @@ const swiper = new Swiper('.swiper', {
   },
   speed: 500,
 
-  spaceBetween: 10,
+  effect: 'flip',
+
+  flipEffect: {
+    sladeShadows: true,
+    limitRotation: true,
+  },
 });

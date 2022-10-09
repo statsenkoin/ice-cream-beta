@@ -1,7 +1,25 @@
 /* mobile 480px */
 .section-customer-reviews {
-  padding-top: 0;
-  padding-bottom: 0;
+  padding-top: 80px;
+  padding-bottom: 394px;
+  width: 100%;
+  max-width: 480px;
+  height: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(../images/customer-reviews/bcg-mobile.jpg);
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .section-customer-reviews {
+    background-image: url(../images/customer-reviews/bcg-mobile@2x.jpg);
+  }
 }
 
 .swiper {
@@ -81,6 +99,23 @@
     font-weight: 500;
     font-size: 16px;
   }
+  .section-customer-reviews {
+    padding-top: 223px;
+    padding-bottom: 383px;
+
+    max-width: 768px;
+    height: 958px;
+
+    background-image: url(../images/customer-reviews/bcg-tablet.jpg);
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .section-customer-reviews {
+      background-image: url(../images/customer-reviews/bcg-tablet@2x.jpg);
+    }
+  }
 }
 
 /* desktop 1200px */
@@ -99,24 +134,21 @@
 
     font-size: 16px;
   }
+  .section-customer-reviews {
+    padding-top: 452px;
+    padding-bottom: 207px;
+
+    max-width: 1200px;
+    height: 1020px;
+
+    background-image: url(../images/customer-reviews/bcg-desktop.jpg);
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .section-customer-reviews {
+      background-image: url(../images/customer-reviews/bcg-desktop@2x.jpg);
+    }
+  }
 }
-
-// .customer-reviews {
-//   width: 100%;
-//   max-width: 480px;
-//   max-height: 940px;
-//   margin-left: auto;
-//   margin-right: auto;
-//   background-image: url(../images/customer-reviews/bcg.jpg);
-//   background-repeat: no-repeat;
-//   background-position: center;
-//   background-size: cover;
-// }
-
-// @media screen and (min-device-pixel-ratio: 2),
-//   screen and (min-resolution: 192dpi),
-//   screen and (min-resolution: 2dppx) {
-//   .overlay {
-//     background-image: url(../images/customer-reviews/bcg@2x.jpg);
-//   }
-// }
