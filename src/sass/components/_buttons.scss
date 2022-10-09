@@ -1,6 +1,6 @@
-.button{
+.button {
   border: none;
-  padding: 12px 34px;
+  padding: 12px 4px;
   font-weight: 600;
   font-size: 14px;
   align-items: center;
@@ -18,20 +18,17 @@
 
 .header__btn {
   width: 152px;
-  display: flex;
+  // display: flex;
   background: rgba(248, 210, 78, 1);
   color: rgba(19, 19, 19, 1);
   cursor: pointer;
 
-  &:hover
-   {
+  &:hover {
     background: rgba(10, 136, 23, 1);
-    
-
   }
-    &:focus{
-      color: rgba(252, 252, 252, 1);
-    }
+  &:focus {
+    color: rgba(252, 252, 252, 1);
+  }
 }
 
 // HERO //
@@ -45,39 +42,34 @@
   color: rgba(19, 19, 19, 1);
   cursor: pointer;
 
-  &:hover
-   {
+  &:hover {
     border-color: rgba(10, 136, 23, 1);
-    
   }
 
-    &:focus{
-  color: rgba(252, 252, 252, 1);
-    }
+  &:focus {
+    color: rgba(252, 252, 252, 1);
+  }
 
-    @media screen and(max-width: 767px) {
-      min-width: 62px;
-      line-height: 1.25;
-      border-radius: 8px;
-      padding: 7px 0;
-    }
+  @media screen and(max-width: 767px) {
+    min-width: 62px;
+    line-height: 1.25;
+    border-radius: 8px;
+    padding: 7px 0;
+  }
 }
 
 .hero__btn-link {
-
   text-decoration-line: underline;
-
+  border: none;
 
   color: #f8d24e;
 }
-
 
 .hero__arrow {
   border: none;
 
   background-color: rgba(0, 0, 0, 0);
 }
-
 
 // PRODUCTS //
 
@@ -89,99 +81,85 @@
 // ABOUT //
 
 .about__btn {
-
   display: flex;
   background: rgba(248, 210, 78, 1);
   color: rgba(19, 19, 19, 1);
   cursor: pointer;
 
-  &:hover
-  {
-  background: rgba(10, 136, 23, 1);
-    
+  &:hover {
+    background: rgba(10, 136, 23, 1);
   }
 
-    &:focus{
-  color: rgba(252, 252, 252, 1);
-    }
+  &:focus {
+    color: rgba(252, 252, 252, 1);
+  }
 }
-
-
 
 // CLOSE-BTN//
 
-.close-btn{
-  position: absolute;
-    top: 20px;
-    right: 20px;
-    background-color: rgba(0, 0, 0, 0);
-    border: 0;
-    padding: 0;
-    line-height: 0;
+.close-btn {
+  // position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 0;
+  padding: 0;
+  line-height: 0;
 
-    @media screen and (max-width: 767px){
-      top: 8px;
-      right: 8px;
-    }
+  @media screen and (max-width: 767px) {
+    top: 8px;
+    right: 8px;
   }
+}
 
-  // SUBMIT //
-  .submit__btn{
+// SUBMIT //
+.submit__btn {
   background: rgba(248, 210, 78, 1);
   color: rgba(19, 19, 19, 1);
   cursor: pointer;
 
-  &:hover
-   {
+  &:hover {
     background: rgba(10, 136, 23, 1);
-    
-
   }
-    &:focus{
-      color: rgba(252, 252, 252, 1);
-    }
+  &:focus {
+    color: rgba(252, 252, 252, 1);
+  }
 }
- 
 
 // OPEN MAP //
 
-.open-map__btn{
+.open-map__btn {
   width: 145px;
   background: rgba(248, 210, 78, 1);
   color: rgba(19, 19, 19, 1);
   cursor: pointer;
 
-  &:hover
-   {
+  &:hover {
     background: rgba(10, 136, 23, 1);
-    
   }
-    &:focus{
-      color: rgba(252, 252, 252, 1);
-    }
+  &:focus {
+    color: rgba(252, 252, 252, 1);
+  }
 }
-
 
 // FOOTER BTN //
 
-.footer__btn{
+.footer__btn {
   width: 196px;
   background: rgba(248, 210, 78, 1);
   color: rgba(19, 19, 19, 1);
   cursor: pointer;
 
-  &:hover
-   {
+  &:hover {
     background: rgba(10, 136, 23, 1);
-    
   }
-    &:focus{
-      color: rgba(252, 252, 252, 1);
-    }
+  &:focus {
+    color: rgba(252, 252, 252, 1);
+  }
 }
 
-.footer__btn-link{
- border: 2px solid #f8d24e;
+.footer__btn-link {
+  border: 2px solid #f8d24e;
   padding: 12px 0;
   width: 196px;
   line-height: 1.28;
@@ -189,13 +167,11 @@
   color: rgba(19, 19, 19, 1);
   cursor: pointer;
 
-  &:hover
-   {
+  &:hover {
     border-color: rgba(10, 136, 23, 1);
-    
   }
 
-    &:focus{
-  color: rgba(252, 252, 252, 1);
-    }
+  &:focus {
+    color: rgba(252, 252, 252, 1);
+  }
 }
