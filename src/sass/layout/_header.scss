@@ -38,10 +38,13 @@
     display: none;
   }
 
-  .header__btn {
+  .header__button {
     @media screen and (max-width: 767px) {
       display: none;
     }
+  }
+  .header__icon {
+    margin-left: 7px;
   }
 }
 

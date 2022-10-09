@@ -1,0 +1,106 @@
+.overlay__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+@media screen and (max-width: 767px) {
+  .overlay__img {
+    max-width: 480px;
+    height: 502px;
+    background-image: url(../images/header/orange.png),
+      url(../images/header/ice.png), url(../images/header/ellips.png);
+
+    background-size: 60px 50px, 157px 207px, 328px 50px;
+    background-repeat: no-repeat;
+    background-position: left 110px top 346px, left 82px top 295px,
+      top 452px left -8px;
+  }
+}
+
+// @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+//   screen and (min-resolution: 192dpi) and (max-width: 767px),
+//   screen and (min-resolution: 2dppx) and (max-width: 767px) {
+//   // .overlay {}
+// }
+
+@media screen and (min-width: 768px) {
+  .overlay__img {
+    max-width: 768px;
+    height: 415px;
+    background-image: url(../images/header/tablet/ice-cream.png),
+      url(../images/header/tablet/ice.png),
+      url(../images/header/tablet/ellipse.png);
+
+    background-size: 152px, 257px 325px, 768px 67px;
+    background-repeat: no-repeat;
+    background-position: left 32px top 250px, left 418px top 90px,
+      top 347px left 0;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .overlay__img {
+    background-image: url(../images/header/tablet/ice-cream@2x.png),
+      url(../images/header/tablet/ice@2x.png),
+      url(../images/header/tablet/ellipse@2x.png);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .overlay__img {
+    max-width: 1200px;
+    height: 664px;
+    background-image: url(../images/header/desktop/ice-cream.png),
+      url(../images/header/desktop/ice.png),
+      url(../images/header/desktop/ellipse.png);
+
+    background-size: 225px, 447px 561px, 1200px 384px;
+    background-repeat: no-repeat;
+    background-position: left 17px top 374px, left 651px top 103px,
+      left 1px top 280px;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+  screen and (min-resolution: 192dpi) and (min-width: 1200px),
+  screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .overlay__img {
+    background-image: url(../images/header/desktop/ice-cream@2x.png),
+      url(../images/header/desktop/ice@2x.png),
+      url(../images/header/desktop/ellipse@2x.png);
+  }
+}
+
+// .overlay__ice {
+//   max-width: 1200px;
+//   height: 664px;
+//   background-image: url(../images/header/desktop/ice.png);
+
+//   background-size: 447px 561px;
+//   background-repeat: no-repeat;
+//   background-position: left 651px top 103px;
+// }
+
+.hero__overlay {
+  // position: absolute;
+  // top: 0;
+  // left: 0;
+  position: absolute;
+  top: 74px;
+  left: 658px;
+  bottom: 0;
+  right: 65px;
+
+  // height: 664px;
+  background: rgba(252, 252, 252, 0.44);
+  filter: blur(50px);
+
+  background-image: url(../images/header/desktop/rectangle.png);
+  background-size: 477px 590px;
+  background-repeat: no-repeat;
+  background-position: top 74px left 658px;
+}
