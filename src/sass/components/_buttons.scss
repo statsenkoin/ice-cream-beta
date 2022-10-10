@@ -63,7 +63,6 @@
 
   border: none;
 
-
   color: #f8d24e;
 }
 
@@ -82,11 +81,15 @@
 // ABOUT //
 
 .about__btn {
-
   display: flex;
+  gap: 4px;
   background: rgba(248, 210, 78, 1);
   cursor: pointer;
   width: 164px;
+  margin-top: 20px;
+  // @media screen and (min-width: 768px) {
+  //   margin-top: 48px;
+  // }
 
   &:hover {
     background: rgba(10, 136, 23, 1);
@@ -96,11 +99,14 @@
     color: rgba(252, 252, 252, 1);
   }
 }
-
+.about__btn {
+  @media screen and (min-width: 768px) {
+    margin-top: 48px;
+  }
+}
 // CLOSE-BTN//
 
 .close-btn {
-
   position: absolute;
   top: 20px;
   right: 20px;
