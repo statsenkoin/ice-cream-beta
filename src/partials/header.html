@@ -1,78 +1,74 @@
 <header class="header">
   <div class="container header__container">
-    <div class="header__overlay">
-      <a href="" class="header__logo">
-        <picture>
-          <source
-            srcset="
-              ./images/header/desktop/logo.png    1x,
-              ./images/header/desktop/logo@2x.png 2x
-            "
-            media="(min-width: 1200px)"
-            type="image/png"
-          />
+    <a href="" class="header__logo">
+      <picture>
+        <source
+          srcset="
+            ./images/header/desktop/logo.png    1x,
+            ./images/header/desktop/logo@2x.png 2x
+          "
+          media="(min-width: 1200px)"
+          type="image/png"
+        />
 
-          <source
-            srcset="
-              ./images/header/tablet/logo.png    1x,
-              ./images/header/tablet/logo@2x.png 2x
-            "
-            media="(min-width: 768px)"
-            type="image/png"
-          />
-          <source
-            srcset="
-              ./images/header/mobile/logo.png    1x,
-              ./images/header/mobile/logo@2x.png 2x
-            "
-            media="(min-width: 480px)"
-            type="image/png"
-          />
+        <source
+          srcset="
+            ./images/header/tablet/logo.png    1x,
+            ./images/header/tablet/logo@2x.png 2x
+          "
+          media="(min-width: 768px)"
+          type="image/png"
+        />
+        <source
+          srcset="
+            ./images/header/mobile/logo.png    1x,
+            ./images/header/mobile/logo@2x.png 2x
+          "
+          media="(min-width: 480px)"
+          type="image/png"
+        />
 
-          <img src="./images/header/mobile/logo.png" alt="logo" />
-        </picture>
-      </a>
+        <img src="./images/header/mobile/logo.png" alt="logo" />
+      </picture>
+    </a>
 
-      <nav class="header__nav">
-        <ul class="list header__list">
-          <li class="header__item">
-            <a class="link header__link" href="">Home</a>
-          </li>
-          <li class="header__item">
-            <a class="link header__link" href="">How it’s made?</a>
-          </li>
-          <li class="header__item">
-            <a class="link header__link" href="">Our products</a>
-          </li>
-          <li class="header__item">
-            <a class="link header__link" href="">Contact</a>
-          </li>
-        </ul>
-      </nav>
+    <nav class="header__nav">
+      <ul class="list header__list">
+        <li class="header__item">
+          <a class="link header__link" href="">Home</a>
+        </li>
+        <li class="header__item">
+          <a class="link header__link" href="">How it’s made?</a>
+        </li>
+        <li class="header__item">
+          <a class="link header__link" href="">Our products</a>
+        </li>
+        <li class="header__item">
+          <a class="link header__link" href="">Contact</a>
+        </li>
+      </ul>
+    </nav>
 
-      <button
-        type="button"
-        class="header__burger"
-        aria-expanded="false"
-        data-menu-open
-      >
-        <svg width="32" height="32">
-          <use href="./images/svg/icons.svg#icon-burger"></use>
-        </svg>
-      </button>
+    <button
+      type="button"
+      class="header__burger"
+      aria-expanded="false"
+      data-menu-open
+    >
+      <svg width="32" height="32">
+        <use href="./images/svg/icons.svg#icon-burger"></use>
+      </svg>
+    </button>
 
-
-      <button
-        type="button"
-        class="js-open-modal header__btn button"
-        data-modal="buy-now"
-      >
-
-        Buy now
-        <svg class="header__icon" width="12" height="12">
-          <use href="./images/svg/icons.svg#icon-arrow_btn"></use>
-        </svg>
-      </button>
-    </div>
+    <button
+      type="button"
+      class="js-open-modal header__btn button header__button"
+      data-modal="buy-now"
+    >
+      Buy now
+      <svg class="header__icon" width="12" height="12">
+        <use href="./images/svg/icons.svg#icon-arrow_btn"></use>
+      </svg>
+    </button>
   </div>
 </header>
