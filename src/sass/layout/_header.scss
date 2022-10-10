@@ -1,8 +1,9 @@
 .header__container {
-  position: relative;
+  // position: relative;
   display: flex;
   align-items: center;
   background: #84a178;
+  padding: 0 20px;
 }
 
 .header__logo {
@@ -26,6 +27,10 @@
 }
 
 @media screen and (min-width: 768px) {
+  .header__container {
+    padding: 0 32px;
+  }
+
   .header__logo {
     padding-top: 20px;
   }
@@ -36,6 +41,10 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .header__container {
+    padding: 0 16px;
+  }
+
   .header__logo {
     padding-top: 8px;
   }
@@ -52,6 +61,10 @@
     /* identical to box height */
 
     color: #fcfcfc;
+    &:hover,
+    &:focus {
+      color: #f8d24e;
+    }
   }
 
   .header__burger {

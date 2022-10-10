@@ -61,6 +61,10 @@
   font-size: 32px;
   line-height: 39px;
   color: #fcfcfc;
+  &:hover,
+  &:focus {
+    color: #131313;
+  }
 }
 
 .mobile__btn {
