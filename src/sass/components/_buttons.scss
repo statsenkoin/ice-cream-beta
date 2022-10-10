@@ -1,0 +1,203 @@
+.button {
+  border: none;
+  padding: 12px 4px;
+  font-weight: 600;
+  font-size: 14px;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.21;
+  border-radius: 10px;
+}
+
+.header__burger {
+  line-height: 0;
+  border: none;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.header__btn {
+  width: 152px;
+  // display: flex;
+  background: rgba(248, 210, 78, 1);
+  color: rgba(19, 19, 19, 1);
+  cursor: pointer;
+
+  &:hover {
+    background: rgba(10, 136, 23, 1);
+  }
+  &:focus {
+    color: rgba(252, 252, 252, 1);
+  }
+}
+
+// HERO //
+
+// для <button>
+
+.hero__btn {
+  // для <a>
+  display: inline-block;
+  text-align: center;
+  // -------
+
+  padding: 12px 0;
+  width: 134px;
+  line-height: 1.28;
+
+  border: 2px solid #f8d24e;
+  background: rgba(132, 161, 120, 1);
+  color: rgba(19, 19, 19, 1);
+  // cursor: pointer;
+
+  &:hover {
+    border-color: rgba(10, 136, 23, 1);
+  }
+
+  &:focus {
+    color: rgba(252, 252, 252, 1);
+  }
+
+  @media screen and(max-width: 1199px) {
+    width: 62px;
+    font-size: 8px;
+    line-height: 1.25;
+    border-radius: 8px;
+    padding: 7px 0;
+  }
+}
+
+.hero__btn-link {
+  // для <a>
+  display: inline-block;
+  text-align: center;
+  // -------
+
+  width: 154px;
+  text-decoration: underline;
+  border: none;
+  color: #f8d24e;
+
+  @media screen and(max-width: 1199px) {
+    width: 82px;
+  }
+}
+
+.hero__arrow {
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+// PRODUCTS //
+
+.products__button {
+  border: 20px solid tomato;
+  background-color: black;
+}
+
+// ABOUT //
+
+.about__btn {
+  display: flex;
+  gap: 4px;
+  background: rgba(248, 210, 78, 1);
+  cursor: pointer;
+  width: 164px;
+  margin-top: 20px;
+  // @media screen and (min-width: 768px) {
+  //   margin-top: 48px;
+  // }
+
+  &:hover {
+    background: rgba(10, 136, 23, 1);
+  }
+
+  &:focus {
+    color: rgba(252, 252, 252, 1);
+  }
+}
+.about__btn {
+  @media screen and (min-width: 768px) {
+    margin-top: 48px;
+  }
+}
+// CLOSE-BTN//
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 0;
+  padding: 0;
+  line-height: 0;
+
+  @media screen and (max-width: 767px) {
+    top: 8px;
+    right: 8px;
+  }
+}
+
+// SUBMIT //
+.submit__btn {
+  background: rgba(248, 210, 78, 1);
+  color: rgba(19, 19, 19, 1);
+  cursor: pointer;
+
+  &:hover {
+    background: rgba(10, 136, 23, 1);
+  }
+  &:focus {
+    color: rgba(252, 252, 252, 1);
+  }
+}
+
+// OPEN MAP //
+
+.open-map__btn {
+  width: 145px;
+  background: rgba(248, 210, 78, 1);
+  color: rgba(19, 19, 19, 1);
+  cursor: pointer;
+
+  &:hover {
+    background: rgba(10, 136, 23, 1);
+  }
+  &:focus {
+    color: rgba(252, 252, 252, 1);
+  }
+}
+
+// CONTACTS BTN //
+
+.contacts__btn-location {
+  width: 196px;
+  background: rgba(248, 210, 78, 1);
+  color: rgba(19, 19, 19, 1);
+  cursor: pointer;
+
+  &:hover {
+    background: rgba(10, 136, 23, 1);
+  }
+  &:focus {
+    color: rgba(252, 252, 252, 1);
+  }
+}
+
+.contacts__btn-franchise {
+  border: 2px solid #f8d24e;
+  padding: 12px 0;
+  width: 196px;
+  line-height: 1.28;
+  background: rgba(132, 161, 120, 1);
+  color: rgba(19, 19, 19, 1);
+  cursor: pointer;
+
+  &:hover {
+    border-color: rgba(10, 136, 23, 1);
+  }
+
+  &:focus {
+    color: rgba(252, 252, 252, 1);
+  }
+}

@@ -1,0 +1,26 @@
+// задано стилі для вікна і кнопки закриття
+.modal {
+  padding: 28px 20px 32px;
+}
+
+.modal__cross {
+  width: 20px;
+  height: 20px;
+  top: 28px;
+  right: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    padding: 32px 40px;
+
+    &__cross {
+      width: 20px;
+      height: 20px;
+      top: 20px;
+      right: 20px;
+    }
+  }
+}
+
+// нижче пишем стилі для контенту

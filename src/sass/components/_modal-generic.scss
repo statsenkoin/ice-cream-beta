@@ -1,0 +1,85 @@
+/* Стилі для фона */
+
+.modal-overlay {
+  /* Приховуємо фон  */
+  opacity: 0;
+  visibility: hidden;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 8888;
+  transition: 0.3s all;
+}
+
+/* Стилі для модальних вікон */
+
+.modal {
+  /* Приховуємо вікна  */
+  opacity: 0;
+  visibility: hidden;
+
+  /*  Встановлюємо ширину вікна  */
+  // ---------------------------------------
+  width: 280px;
+  // -------------------------------------------
+
+  /*  Центруємо і задаємо z-index */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999; /* Повинен бути вищим ніж у фона*/
+
+  /*  Побічні стилі   */
+  // ---------------------------------------------
+  box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding: 28px;
+
+  border: 2px solid #f8d24e;
+  border-radius: 10px;
+  background-color: #fcfcfc;
+
+  transition: 0.3s all;
+  // ---------------------------------------------------
+}
+
+/* Стилі для активних класів підкладки та вікна */
+
+.modal.active,
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Стилі для кнопки закриття */
+// -------------------------------------
+.modal__cross {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  fill: #131313;
+  cursor: pointer;
+}
+// -------------------------------------
+
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 568px;
+
+    padding: 32px 60px;
+
+    &__cross {
+      width: 20px;
+      height: 20px;
+      top: 20px;
+      right: 20px;
+    }
+  }
+}
