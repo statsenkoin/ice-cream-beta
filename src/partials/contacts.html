@@ -1,6 +1,5 @@
 <section class="section section-contacts contacts" id="contacts">
   <div class="container contacts__container">
-
     <!-- <h2 class="visually-hidden">contacts</h2> -->
     <h2 class="section__title">contacts</h2>
 
@@ -113,10 +112,21 @@
         </ul>
       </li>
     </ul>
-    <li class="button__list list">
-      <button>Our Locations</button>
-      <button>Franchise</button>
-    </li>
-
+    <div class="contact__button">
+      <button
+        type="button"
+        class="contacts__button-location button js-open-modal"
+        data-modal="our-locations"
+      >
+        <span class="contacts__btn-text">Our Locations</span>
+      </button>
+      <button
+        type="button"
+        class="contacts__button-franchise button js-open-modal"
+        data-modal="franchise"
+      >
+        <span class="contacts__btn-text">Franchise</span>
+      </button>
+    </div>
   </div>
 </section>
