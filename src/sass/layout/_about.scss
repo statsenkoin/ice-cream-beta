@@ -1,6 +1,6 @@
-
 .about {
   padding-bottom: 0px;
+  margin-bottom: -1px;
 }
 
 .about__container {
@@ -8,6 +8,12 @@
   color: #fcfcfc;
   padding-top: 60px;
   padding-bottom: 21px;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 53px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 60px;
+  }
 }
 .about__suptitle {
   @media screen and (max-width: 767px) {
@@ -71,7 +77,7 @@
     #d9d9d9;
   box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
   height: 278px;
-  width: 288px;
+  width: 278px;
   border-radius: 140.182px;
 
   @media screen and (min-width: 768px) {
