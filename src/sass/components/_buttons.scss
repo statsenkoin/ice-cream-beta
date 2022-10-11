@@ -7,6 +7,7 @@
   justify-content: center;
   line-height: 1.21;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .header__burger {
@@ -18,7 +19,6 @@
 
 .header__btn {
   width: 152px;
-  // display: flex;
   background: rgba(248, 210, 78, 1);
   color: rgba(19, 19, 19, 1);
   cursor: pointer;
@@ -60,11 +60,9 @@
 
 .hero__btn-link {
   text-decoration-line: underline;
-
   border: none;
-
-
   color: #f8d24e;
+  cursor: pointer;
 }
 
 .hero__arrow {
@@ -75,8 +73,8 @@
 // PRODUCTS //
 
 .products__button {
-  border: 20px solid tomato;
-  background-color: black;
+ border: none;
+background-color: #0000;
 }
 
 // ABOUT //
