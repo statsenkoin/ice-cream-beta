@@ -265,19 +265,19 @@
 
   color: #000000;
   border-color: transparent;
-  width: 150px;
-  height: 32px;
   margin-left: 65px;
   margin-right: 65px;
   background: #f8d24e;
   border-radius: 10px;
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 300ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 300ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   @media screen and (min-width: 768px) {
     width: 150px;
+    height: 42px;
+  }
+  @media screen and (max-width: 767px) {
+    width: 132px;
     height: 42px;
   }
 

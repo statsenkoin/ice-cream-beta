@@ -24,3 +24,167 @@
 }
 
 // нижче пишем стилі для контенту
+@media screen and (min-width: 768px) {
+  .modal-chololate-icecream {
+    width: 568px;
+    height: 100vh;
+    padding: 32px 20px;
+  }
+
+
+}
+
+.ingredient__wrap {
+    position: relative;
+    margin-bottom: 24px;
+  }
+
+.ingredient-title {
+  margin-bottom: 22px;
+  
+  text-align: center;
+  font-family: 'Seymour One';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.4;
+  
+  color: #131313;
+  
+  @media screen and (min-width: 768px) {
+    margin-bottom: 24px;
+  }
+}
+.ingredient__card {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 131px;
+  height: 131px;
+  border-radius: 50%;
+  
+  background: linear-gradient(0deg,rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #d9d9d9;
+  box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+  
+}
+.ingredient-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.ingredient {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 39px;
+  
+  @media screen and (min-width: 768px) {
+    margin-bottom: 48px;
+  }
+}
+.ingredient__item {
+  position: relative;
+  width: 53px;
+  height: 72px;
+  border-radius: 40%;
+  border: 2px solid #9cbe8f;
+  
+  @media screen and (min-width: 768px) {
+    width: 65px;
+    height: 90px;
+  }
+  
+  &::before {
+    position: absolute;
+    display: block;
+    top: -3px;
+    left: 3px;
+    content: '';
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
+  
+    background-color: #9cbe8f;
+  
+    @media screen and (min-width: 768px) {
+      width: 53px;
+      height: 53px;
+      left: 4px;
+    }
+  }
+}
+
+.ingredient__compound {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 52px 10px 8px;
+  
+  font-size: 10px;
+  line-height: 1.2;
+  
+  color: var(--secondary-text-color);
+  
+  @media screen and (min-width: 768px) {
+    padding: 61px 15px 14px 15px;
+    font-size: 12px;
+    line-height: 1.3;
+  }
+
+}
+
+.ingredient__compound-gram {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 2.3;
+  
+  color: var(--secondary-text-color);
+  
+  @media screen and (min-width: 768px) {
+    top: 11px;
+    left: 14px;
+    font-size: 12px;
+    line-height: 1.3;
+  }
+
+}
+
+.table {
+  width: 100%;
+  margin-bottom: 48px;
+  
+}
+
+.table__title {
+  color: #131313;
+  margin-bottom: 24px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.table__row {
+  display: flex;
+  justify-content: space-between;
+  
+  &:nth-child(-n + 5) {
+    margin-bottom: 11px;
+  }
+}
+.table__part {
+  color: #131313;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.8;
+  letter-spacing: 0.04em;
+  
+  
+}

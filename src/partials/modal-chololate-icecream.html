@@ -8,15 +8,69 @@
   <!-- ======================================= -->
 
   <!--   Svg іконка для закриття вікна  -->
-  <svg
-    class="modal__cross modal-chololate-icecream__cross js-modal-close"
-    width="16"
-    height="16"
-  >
+  <svg class="modal__cross modal-chololate-icecream__cross js-modal-close" width="16" height="16">
     <use href="./images/svg/icons.svg#icon-cross"></use>
   </svg>
   <!-- ======================================= -->
 
   <!-- далі пишемо розмітку -->
-  <p>Chololate icecream</p>
+  <h2 class="ingredient-title">Chololate icecream</h2>
+  <div class="ingredient__wrap">
+    <span class="ingredient__card"></span>
+    <img class="ingredient-img" src="./images/modal/desktop/simple-modal@1.png" alt="Chololate Icecream" width="131" height="131">
+  </div>
+
+  <ul class="ingredient list">
+    <li class="ingredient__item">
+      <span class="ingredient__compound">kcal</span>
+      <span class="ingredient__compound-gram">320</span>
+    </li>
+    <li class="ingredient__item">
+      <span class="ingredient__compound">Prote...</span>
+      <span class="ingredient__compound-gram">4g</span>
+    </li>
+    <li class="ingredient__item">
+      <span class="ingredient__compound">Fats</span>
+      <span class="ingredient__compound-gram">8,2g</span>
+    </li>
+    <li class="ingredient__item">
+      <span class="ingredient__compound">Carbs</span>
+      <span class="ingredient__compound-gram">40,4g</span>
+    </li>
+  </ul>
+  <table class="table">
+    <caption class="table__title">Ingredients</caption>
+    <tbody class="table__compound">
+      <tr class="table__row">
+        <td class="table__part">Milk</td>
+        <td class="table__part">100ml</td>
+      </tr>
+      <tr class="table__row">
+        <td class="table__part">Belgian chocolate</td>
+        <td class="table__part">20g</td>
+      </tr>
+      <tr class="table__row">
+        <td class="table__part">Cream</td>
+        <td class="table__part">150ml</td>
+      </tr>
+      <tr class="table__row">
+        <td class="table__part">Cocoa powder</td>
+        <td class="table__part">30g</td>
+      </tr>
+      <tr class="table__row">
+        <td class="table__part">Sugar</td>
+        <td class="table__part">40g</td>
+      </tr>
+      <tr class="table__row">
+        <td class="table__part">Vanilla sugar</td>
+        <td class="table__part">10g</td>
+      </tr>
+    </tbody>
+
+  </table>
+
+  <input type="text" name="user-name" class="buy-modal__name" required="" pattern="^[a-zA-zа-яА-я]+$" placeholder="Name" />
+  <input type="tel" name="user-phone" class="buy-modal__name" required="" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="xxx-xxx-xx-xx" placeholder="Phone" />
+  <textarea class="buy-modal__comment" name="user-comment" placeholder="Comment"></textarea>
+  <button type="submit" class="submit-button">Submit</button>
 </div>
