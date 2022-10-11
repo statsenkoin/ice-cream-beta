@@ -2,6 +2,8 @@
   background-color: #84a278;
   // position: absolute;
   height: 502px;
+  padding: 0;
+  margin-top: -1px;
 }
 
 .hero__title {
@@ -10,6 +12,7 @@
   max-width: 247px;
 
   padding-top: 110px;
+  margin-left: 20px;
   // @include font(26px, 400, 33px);
   font-weight: 400;
   font-size: 26px;
@@ -23,6 +26,9 @@
   margin-top: 32px;
   margin-right: 12px;
 }
+.hero__link {
+  margin-left: 20px;
+}
 
 @media screen and (min-width: 768px) {
   .hero__container {
@@ -31,6 +37,7 @@
   .hero__title {
     padding-top: 110px;
     width: 100%;
+    margin-left: 32px;
     max-width: 181px;
     // @include font(38px, 400, 48px);
     font-weight: 400;
@@ -82,6 +89,9 @@
     margin-top: 20px;
     margin-right: 8px;
   }
+  .hero__link {
+    margin-left: 32px;
+  }
 
   .hero__position {
     position: absolute;
@@ -118,6 +128,7 @@
   .hero__title {
     max-width: 367px;
     padding-top: 118px;
+    margin-left: 16px;
     // @include font(38px, 400, 48px);
     font-weight: 400;
     font-size: 38px;
@@ -146,6 +157,10 @@
   .hero__btn {
     margin-top: 28px;
   }
+  .hero__link {
+    margin-left: 16px;
+  }
+
   .hero__position {
     top: 441px;
     left: 256px;
