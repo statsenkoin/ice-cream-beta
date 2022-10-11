@@ -13,3 +13,46 @@
 */
 
 // нижче пишем стилі для контенту
+.modal-locations-title {
+  font-family: 'Seymour One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #131313;
+  padding-bottom: 32px;
+}
+.locations-img{
+    width: 448px;
+    height: 260px;
+    left: 60px;
+    top: 92px;
+    border-radius: 10px;
+    padding-bottom: 32px;
+}
+
+.modal-locations-link{
+  position:fixed;
+   width: 145px;
+   height: 42px;
+   left: 212px;
+   padding-bottom: 0px;
+
+  font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+  
+  background-color: #F8D24E;
+  border-radius: 10px;
+}
+.modal-our-locations{
+  width: 568px;
+  height: 458px;
+}
