@@ -25,9 +25,10 @@
 .swiper {
   width: 280px;
   height: 466px;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
 }
-
 .swiper-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal {
   bottom: -6px;
@@ -40,8 +41,7 @@
 .swiper-pagination-bullet {
   background-color: #84a178;
 }
-
-.swiper-slide_image {
+.swiper-slide__image {
   margin-left: auto;
   margin-right: auto;
 }
@@ -74,11 +74,28 @@
 
 /* tablet 768px */
 @media screen and (min-width: 768px) {
+  .section-customer-reviews {
+    padding-top: 223px;
+    padding-bottom: 383px;
+
+    max-width: 768px;
+    height: 958px;
+
+    background-image: url(../images/customer-reviews/bcg-tablet.png);
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .section-customer-reviews {
+      background-image: url(../images/customer-reviews/bcg-tablet@2x.png);
+    }
+  }
+
   .swiper {
     width: 705px;
     height: 350px;
   }
-
   .swiper-slide__text {
     width: 100%;
     max-width: 705px;
@@ -99,41 +116,10 @@
     font-weight: 500;
     font-size: 16px;
   }
-  .section-customer-reviews {
-    padding-top: 223px;
-    padding-bottom: 383px;
-
-    max-width: 768px;
-    height: 958px;
-
-    background-image: url(../images/customer-reviews/bcg-tablet.png);
-  }
-
-  @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-    .section-customer-reviews {
-      background-image: url(../images/customer-reviews/bcg-tablet@2x.png);
-    }
-  }
 }
 
 /* desktop 1200px */
 @media screen and (min-width: 1200px) {
-  .swiper {
-    width: 968px;
-    height: 361px;
-  }
-  .swiper-slide__text {
-    width: 100%;
-    max-width: 968px;
-    height: 138px;
-    padding: 39px 109px 47px;
-    margin-top: 32px;
-    margin-bottom: 32px;
-
-    font-size: 16px;
-  }
   .section-customer-reviews {
     padding-top: 452px;
     padding-bottom: 207px;
@@ -150,5 +136,20 @@
     .section-customer-reviews {
       background-image: url(../images/customer-reviews/bcg-desktop@2x.png);
     }
+  }
+
+  .swiper {
+    width: 968px;
+    height: 361px;
+  }
+  .swiper-slide__text {
+    width: 100%;
+    max-width: 968px;
+    height: 138px;
+    padding: 39px 109px 47px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+
+    font-size: 16px;
   }
 }
