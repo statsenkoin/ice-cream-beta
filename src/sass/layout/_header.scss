@@ -1,16 +1,11 @@
 .header__container {
-  // position: relative;
-  display: flex;
-  align-items: center;
   background: #84a178;
-  padding: 0 20px;
-}
-
-.header__logo {
-  padding-top: 12px;
+  padding: 12px 20px;
 }
 .header__nav {
-  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .header__list {
@@ -28,25 +23,21 @@
 
 @media screen and (min-width: 768px) {
   .header__container {
-    padding: 0 32px;
-  }
-
-  .header__logo {
-    padding-top: 20px;
+    padding: 20px 32px;
   }
 
   .header__burger {
     margin-right: 32px;
+    margin-left: auto;
+  }
+  .header__button {
+    height: 42px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .header__container {
-    padding: 0 16px;
-  }
-
-  .header__logo {
-    padding-top: 8px;
+    padding: 20px 16px;
   }
 
   .header__list {
@@ -58,7 +49,6 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
-    /* identical to box height */
 
     color: #fcfcfc;
     &:hover,
