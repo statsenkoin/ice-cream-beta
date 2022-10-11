@@ -1,28 +1,33 @@
-@media screen and (min-width: 320px) {
-  .hero__container {
-    background-color: #84a278;
-    position: relative;
-    height: 502px;
-  }
+.hero__container {
+  background-color: #84a278;
+  // position: absolute;
+  height: 502px;
+  padding: 0;
+  margin-top: -1px;
+}
 
-  .hero__title {
-    font-family: Seymour One;
-    width: 100%;
-    max-width: 247px;
+.hero__title {
+  font-family: Seymour One;
+  width: 100%;
+  max-width: 247px;
 
-    padding-top: 110px;
-    // @include font(26px, 400, 33px);
-    font-weight: 400;
-    font-size: 26px;
-    line-height: 33px;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
+  padding-top: 110px;
+  margin-left: 20px;
+  // @include font(26px, 400, 33px);
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 33px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 
-    color: #fcfcfc;
-  }
-  .hero__btn {
-    margin-top: 32px;
-  }
+  color: #fcfcfc;
+}
+.hero__btn {
+  margin-top: 32px;
+  margin-right: 12px;
+}
+.hero__link {
+  margin-left: 20px;
 }
 
 @media screen and (min-width: 768px) {
@@ -32,6 +37,7 @@
   .hero__title {
     padding-top: 110px;
     width: 100%;
+    margin-left: 32px;
     max-width: 181px;
     // @include font(38px, 400, 48px);
     font-weight: 400;
@@ -43,9 +49,8 @@
       width: 100%;
       max-width: 182px;
       font-weight: 400;
-      font-size: 16px;
-      line-height: 13px;
-      color: aqua;
+      font-size: 24px;
+      line-height: 27px;
     }
   }
   .hero__box {
@@ -82,6 +87,10 @@
   }
   .hero__btn {
     margin-top: 20px;
+    margin-right: 8px;
+  }
+  .hero__link {
+    margin-left: 32px;
   }
 
   .hero__position {
@@ -119,6 +128,7 @@
   .hero__title {
     max-width: 367px;
     padding-top: 118px;
+    margin-left: 16px;
     // @include font(38px, 400, 48px);
     font-weight: 400;
     font-size: 38px;
@@ -147,6 +157,10 @@
   .hero__btn {
     margin-top: 28px;
   }
+  .hero__link {
+    margin-left: 16px;
+  }
+
   .hero__position {
     top: 441px;
     left: 256px;
