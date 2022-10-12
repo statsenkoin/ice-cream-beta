@@ -33,8 +33,6 @@
 
 // HERO //
 
-// для <button>
-
 .hero__btn {
   // для <a>
   display: inline-block;
@@ -48,7 +46,6 @@
   border: 2px solid #f8d24e;
   background: rgba(132, 161, 120, 1);
   color: rgba(19, 19, 19, 1);
-  // cursor: pointer;
 
   &:hover {
     border-color: rgba(10, 136, 23, 1);
@@ -68,7 +65,6 @@
 }
 
 .hero__btn-link {
-
   // для <a>
   display: inline-block;
   text-align: center;
@@ -92,8 +88,8 @@
 // PRODUCTS //
 
 .products__button {
- border: none;
-background-color: #0000;
+  border: none;
+  background-color: #0000;
 }
 
 // ABOUT //
@@ -180,7 +176,7 @@ background-color: #0000;
 
 // CONTACTS BTN //
 
-.contacts__btn-location {
+.contacts__button-location {
   width: 196px;
   background: rgba(248, 210, 78, 1);
   color: rgba(19, 19, 19, 1);
@@ -194,7 +190,7 @@ background-color: #0000;
   }
 }
 
-.contacts__btn-franchise {
+.contacts__button-franchise {
   border: 2px solid #f8d24e;
   padding: 12px 0;
   width: 196px;
