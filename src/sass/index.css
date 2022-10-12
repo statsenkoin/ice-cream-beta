@@ -855,7 +855,6 @@ img {
 .footer-social__list {
   display: flex;
   gap: 30px;
-  padding-left: auto;
   justify-content: flex-end;
 }
 @media screen and (min-width: 768px) {
@@ -869,18 +868,29 @@ img {
   }
 }
 
-.footer-social__icon {
-  fill: #84a278;
-}
-
 .footer-social__link {
   display: flex;
-  width: 34px;
-  height: 34px;
-  background-color: #f8d24e;
-  border-radius: 17px;
   align-items: center;
   justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 17px;
+  fill: #84a278;
+  background-color: #f8d24e;
+  transition-property: background-color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-social__link:hover {
+  fill: #fcfcfc;
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+}
+.footer-social__link:focus {
+  width: 36px;
+  height: 36px;
+  border-radius: 18px;
 }
 
 @media screen and (min-width: 320px) {
