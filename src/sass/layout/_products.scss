@@ -1,8 +1,4 @@
 // MOBILE //
-
-@media screen and (max-width: 767px) {
-    
-
 .section-products{
     width: 100%;
     max-width: 480px;
@@ -24,87 +20,78 @@ screen and (min-resolution: 2dppx) {
     margin-bottom: 40px;
 }
 
+.products__list{
+text-align: center;
+}
 
-
-.products__item-first{
-    text-align: center;
+.products__group{
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-.products__group {
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+.products__eclips{
+    position: absolute;
+    display: flex;
+    height: 200px;
+    width: 200px;
+    z-index: 1;
+background: 
+linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
+box-shadow: 
+0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
+border-radius: 100.166px;
+}
+
+.products__item{
     z-index: 2;
 }
 
-.products__item-title{
+.products__img{
+    position: relative;
+    bottom: 10px;
+}
+
+.products__item-tittle{
     margin-top: 20px;
 font-weight: 700;
 font-size: 20px;
-line-height: 1.2;
+line-height: 1.25;
 letter-spacing: 0.04em;
 text-transform: uppercase;
 
 color: #131313;
+
 }
 
-.products__eclips {
+.products__button{
     position: absolute;
-    top: 5%;
-    left: 16%;
-    z-index: 1;
-    width: 200px;
-    height: 200px;
-    background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
-    box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
-    border-radius: 100.166px;
-}
-
-.conteiner-block{
-    width: 280px;
-    height: 420px;
-    border-radius: 24px;
-    position: absolute;
-    top: 45%;
-    left: auto;
-    background: rgba(174, 198, 165, 1);;
-}
-
-.products__item-text{
-    padding: 40px;
-font-size: 14px;
-    top: 40%;
-    left: 0;
-    position: absolute;
+    top: 90%;
+    left: 40%
 }
 
 .products__icon{
+    box-sizing: border-box;
     width: 40px;
     height: 15px;
     border: 2px;
+}
+
+.conteiner-block{
     position: absolute;
-    top: 90%;
-    left: 40%;
+    top:50%;
+    width: 280px;
+height: 420px;
+    background: #AEC6A5;
+border-radius: 24px;
 }
 
-.products__fon{
- width: 100%;
-    max-width: 480px;
-    min-height: 700px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url(../images/products/mobile-fon/fon-2.png);
-}
-@media screen and (min-device-pixel-ratio: 2),
-screen and (min-resolution: 192dpi),
-screen and (min-resolution: 2dppx) {
-    .section-products {
-        background-image: url(../images/products/mobile-fon/fon-2@2x.png);
-    }
-
-}
+.products__item-text{
+    position: absolute;
+    top:40%;
+font-size: 14px;
+line-height: 176%;
 
 }
