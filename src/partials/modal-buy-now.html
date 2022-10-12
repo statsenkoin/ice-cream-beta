@@ -21,67 +21,113 @@
   <!-- ======================================= -->
 
   <h2 class="buy-modal__title">Buy now</h2>
-  <ul class="buy-modal__list list">
-    <li class="buy-modal__list-item first">
-      <picture>
-        <source
-          srcset="
-            ./images/modal/modal1@1.png 1x,
-            ./images/modal/modal1@2.png 2x
-          "
-          media="(max-width: 767px)"
-        />
-        <img
-          class="buy-modal__picture"
-          src="./images/modal/modal1@1.png"
-          alt="Ice Cream"
-        />
-      </picture>
-      <p class="buy-modal__text">Ice Cream</p>
-    </li>
 
-    <li class="buy-modal__list-item second">
-      <picture>
-        <source
-          srcset="
-            ./images/modal/modal2@1.png 1x,
-            ./images/modal/modal2@2.png 2x
-          "
-          media="(max-width: 767px)"
+  <form class="buy-modal__form">
+    <fieldset class="buy-modal__list">
+      <label class="buy-modal__label">
+        <picture>
+          <source
+            srcset="
+              ./images/modal/mobile/modal1@1.png 1x,
+              ./images/modal/mobile/modal1@2.png 2x
+            "
+            media="(max-width: 767px)"
+          />
+          <source
+            srcset="
+              ./images/modal/desktop/modal1@1.png 1x,
+              ./images/modal/desktop/modal1@2.png 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <img
+            class="buy-modal__picture"
+            src="./images/modal/mobile/modal1@1.png"
+            alt="Ice Cream"
+          />
+        </picture>
+        <span class="buy-modal__ellipse buy-modal__first"></span>
+        <input
+          class="buy-modal__input"
+          type="checkbox"
+          name="Ice-Cream"
+          value="Ice-Cream"
         />
-        <img
-          class="buy-modal__picture"
-          src="./images/modal/modal2@1.png"
-          alt="Ice Coffee"
+        <svg class="buy-modal__svg first"></svg>
+        <span class="buy-modal__text">Ice Cream</span>
+      </label>
+      <label class="buy-modal__label">
+        <picture>
+          <source
+            srcset="
+              ./images/modal/mobile/modal2@1.png 1x,
+              ./images/modal/mobile/modal2@2.png 2x
+            "
+            media="(max-width: 767px)"
+          />
+          <source
+            srcset="
+              ./images/modal/desktop/modal2@1.png 1x,
+              ./images/modal/desktop/modal2@2.png 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <img
+            class="buy-modal__picture"
+            src="./images/modal/mobile/modal2@1.png"
+            alt="Ice Coffee"
+          />
+        </picture>
+        <span class="buy-modal__ellipse buy-modal__second"></span>
+        <input
+          class="buy-modal__input"
+          type="checkbox"
+          name="Ice-coffee"
+          value="Ice-coffee"
+          checked
         />
-      </picture>
-      <p class="buy-modal__text">Ice coffee</p>
-    </li>
+        <svg class="buy-modal__svg second"></svg>
+        <span class="buy-modal__text">Ice coffee</span>
+      </label>
+      <label class="buy-modal__label">
+        <picture>
+          <source
+            srcset="
+              ./images/modal/mobile/modal3@1.png 1x,
+              ./images/modal/mobile/modal3@2.png 2x
+            "
+            media="(max-width: 767px)"
+          />
+          <source
+            srcset="
+              ./images/modal/desktop/modal3@1.png 1x,
+              ./images/modal/desktop/modal3@2.png 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <img
+            class="buy-modal__picture"
+            src="./images/modal/mobile/modal3@1.png"
+            alt="Milkshake"
+          />
+        </picture>
+        <span class="buy-modal__ellipse buy-modal__third"></span>
 
-    <li class="buy-modal__list-item third">
-      <picture>
-        <source
-          srcset="
-            ./images/modal/modal3@1.png 1x,
-            ./images/modal/modal3@2.png 2x
-          "
-          media="(max-width: 767px)"
+        <input
+          class="buy-modal__input"
+          type="checkbox"
+          name="Milkshake"
+          value="Milkshake"
         />
-        <img
-          class="buy-modal__picture"
-          src="./images/modal/modal3@1.png"
-          alt="Milkshake"
-        />
-      </picture>
-      <p class="buy-modal__text">Milkshake</p>
-    </li>
-  </ul>
+        <svg class="buy-modal__svg third"></svg>
+        <span class="buy-modal__text">Milkshake</span>
+      </label>
+    </fieldset>
 
-  <form class="modal-form">
     <input
       type="text"
       name="user-name"
-      class="modal-form-input"
+      class="buy-modal__name"
       required=""
       pattern="^[a-zA-zа-яА-я]+$"
       placeholder="Name"
@@ -89,14 +135,14 @@
     <input
       type="tel"
       name="user-phone"
-      class="modal-form-input"
+      class="buy-modal__name"
       required=""
       pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
       title="xxx-xxx-xx-xx"
       placeholder="Phone"
     />
     <textarea
-      class="modal-comment"
+      class="buy-modal__comment"
       name="user-comment"
       placeholder="Comment"
     ></textarea>

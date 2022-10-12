@@ -34,13 +34,18 @@
 // HERO //
 
 .hero__btn {
-  border: 2px solid #f8d24e;
+  // для <a>
+  display: inline-block;
+  text-align: center;
+  // -------
+
   padding: 12px 0;
   width: 134px;
   line-height: 1.28;
+
+  border: 2px solid #f8d24e;
   background: rgba(132, 161, 120, 1);
   color: rgba(19, 19, 19, 1);
-  cursor: pointer;
 
   &:hover {
     border-color: rgba(10, 136, 23, 1);
@@ -50,8 +55,9 @@
     color: rgba(252, 252, 252, 1);
   }
 
-  @media screen and(max-width: 767px) {
-    min-width: 62px;
+  @media screen and(max-width: 1199px) {
+    width: 62px;
+    font-size: 8px;
     line-height: 1.25;
     border-radius: 8px;
     padding: 7px 0;
@@ -59,10 +65,19 @@
 }
 
 .hero__btn-link {
-  text-decoration-line: underline;
+  // для <a>
+  display: inline-block;
+  text-align: center;
+  // -------
+
+  width: 154px;
+  text-decoration: underline;
   border: none;
   color: #f8d24e;
-  cursor: pointer;
+
+  @media screen and(max-width: 1199px) {
+    width: 82px;
+  }
 }
 
 .hero__arrow {
@@ -73,18 +88,26 @@
 // PRODUCTS //
 
 .products__button {
- border: none;
-background-color: #0000;
+  border: none;
+  background-color: #0000;
 }
 
 // ABOUT //
 
 .about__btn {
-
   display: flex;
+  gap: 4px;
   background: rgba(248, 210, 78, 1);
   cursor: pointer;
   width: 164px;
+  margin-top: 20px;
+  // @media screen and (min-width: 768px) {
+  //   margin-top: 48px;
+  // }
+  @media screen and (max-width: 767px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
 
   &:hover {
     background: rgba(10, 136, 23, 1);
@@ -94,11 +117,14 @@ background-color: #0000;
     color: rgba(252, 252, 252, 1);
   }
 }
-
+.about__btn {
+  @media screen and (min-width: 768px) {
+    margin-top: 48px;
+  }
+}
 // CLOSE-BTN//
 
 .close-btn {
-
   position: absolute;
   top: 20px;
   right: 20px;
@@ -130,6 +156,11 @@ background-color: #0000;
 // OPEN MAP //
 
 .open-map__btn {
+  // для <a>
+  display: block;
+  text-align: center;
+  // ------
+
   width: 145px;
   background: rgba(248, 210, 78, 1);
   color: rgba(19, 19, 19, 1);
@@ -143,9 +174,9 @@ background-color: #0000;
   }
 }
 
-// FOOTER BTN //
+// CONTACTS BTN //
 
-.footer__btn {
+.contacts__button-location {
   width: 196px;
   background: rgba(248, 210, 78, 1);
   color: rgba(19, 19, 19, 1);
@@ -159,7 +190,7 @@ background-color: #0000;
   }
 }
 
-.footer__btn-link {
+.contacts__button-franchise {
   border: 2px solid #f8d24e;
   padding: 12px 0;
   width: 196px;

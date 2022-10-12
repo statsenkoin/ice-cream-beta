@@ -1,6 +1,6 @@
 <header class="header">
-  <div class="container header__container">
-    <div class="header__overlay">
+  <div class="container header__container overlay__img">
+    <nav class="header__nav">
       <a href="" class="header__logo">
         <picture>
           <source
@@ -33,22 +33,20 @@
         </picture>
       </a>
 
-      <nav class="header__nav">
-        <ul class="list header__list">
-          <li class="header__item">
-            <a class="link header__link" href="">Home</a>
-          </li>
-          <li class="header__item">
-            <a class="link header__link" href="">How it’s made?</a>
-          </li>
-          <li class="header__item">
-            <a class="link header__link" href="">Our products</a>
-          </li>
-          <li class="header__item">
-            <a class="link header__link" href="">Contact</a>
-          </li>
-        </ul>
-      </nav>
+      <ul class="list header__list">
+        <li class="header__item">
+          <a class="link header__link" href="#home">Home</a>
+        </li>
+        <li class="header__item">
+          <a class="link header__link" href="#about">How it’s made?</a>
+        </li>
+        <li class="header__item">
+          <a class="link header__link" href="#products">Our products</a>
+        </li>
+        <li class="header__item">
+          <a class="link header__link" href="#contacts">Contact</a>
+        </li>
+      </ul>
 
       <button
         type="button"
@@ -61,18 +59,62 @@
         </svg>
       </button>
 
-
       <button
         type="button"
-        class="js-open-modal header__btn button"
+        class="js-open-modal header__btn button header__button"
         data-modal="buy-now"
       >
-
         Buy now
         <svg class="header__icon" width="12" height="12">
           <use href="./images/svg/icons.svg#icon-arrow_btn"></use>
         </svg>
       </button>
+    </nav>
+
+    <div class="hero" id="home">
+      <div class="hero__container">
+        <h1 class="hero__title">
+          ice cream made with <span class="hero__subtitle"> passion </span>
+        </h1>
+        <div class="hero__box">
+          <p class="hero__text">16</p>
+          <p class="hero__desc">cafes</p>
+          <p class="hero__text">23</p>
+          <p class="hero__desc">food trucks</p>
+        </div>
+
+        <!-- <button type="button" class="button hero__btn" href="#products">
+        Products
+      </button> -->
+
+        <a class="button hero__btn link hero__link" href="#products">
+          Products
+        </a>
+
+        <!-- <button
+        type="button"
+        class="button hero__btn hero__btn-link"
+        href="#about"
+      >
+        How it’s made?
+      </button> -->
+
+        <a class="button hero__btn hero__btn-link link" href="#about">
+          How it’s made?
+        </a>
+
+        <div class="hero__position">
+          <p class="hero__lead">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et
+          </p>
+          <button type="button" class="button hero__arrow">
+            <svg class="hero__icon">
+              <use href="./images/svg/icons.svg#icon-arrow"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
     </div>
   </div>
 </header>

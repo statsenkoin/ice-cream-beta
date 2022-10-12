@@ -13,3 +13,93 @@
 */
 
 // нижче пишем стилі для контенту
+// .modal {
+//   // width: 568px;
+//   // height: 668px;
+// }
+.modal_form_title {
+  font-family: 'Seymour One';
+  // font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #131313;
+
+  width: 322px;
+  // height: 84px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 24px;
+}
+.modal_form_text {
+  // width: 448px;
+  // height: 132px;
+
+  // margin-left: auto;
+  // margin-right: auto;
+  // margin-bottom: 32px;
+
+  // font-family: 'Montserrat';
+  // font-style: normal;
+  // font-weight: 400;
+  // font-size: 16px;
+  // line-height: 140%;
+  // color: #131313;
+  line-height: 1.4;
+  text-align: left;
+}
+
+.modal_form {
+  display: flex;
+  flex-direction: column;
+  width: 368px;
+  height: 332px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 32px;
+}
+
+.products-fild-input {
+  // font-family: 'Montserrat';
+  // font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  padding-left: 16px;
+
+  background: rgba(248, 210, 78, 0.1);
+  border: 1px solid #84a178;
+  border-radius: 10px;
+
+  width: 368px;
+  height: 42px;
+}
+
+.form-products-fild {
+  // width: 368px;
+  // height: 42px;
+  margin-bottom: 16px;
+}
+
+.fild-text {
+  padding-top: 11px;
+  padding-left: 16px;
+  width: 368px;
+  height: 84px;
+  background: rgba(248, 210, 78, 0.1);
+  border: 1px solid #84a178;
+  border-radius: 10px;
+}
+.form-hero-fild {
+  resize: none;
+}
+.modal_form_submit {
+  width: 121px;
+  height: 42px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 32px;
+
+  background: #f8d24e;
+  border-radius: 10px;
+}
