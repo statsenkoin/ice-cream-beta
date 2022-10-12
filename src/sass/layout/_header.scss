@@ -1,54 +1,36 @@
-@media screen and (min-width: 320px) {
-  .header__container {
-    position: relative;
-    display: flex;
-    align-items: center;
-    background: #84a178;
-  }
-  .header__overlay {
-    // position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 10;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    padding: 0 16px;
-  }
+.header__container {
+  // position: relative;
+  display: flex;
+  align-items: center;
+  background: #84a178;
+  padding: 0 20px;
+}
 
-  // .header__overlay {
-  //   // position: absolute;
-  //   top: 0;
-  //   left: 0;
-  //   z-index: 10;
-  //   display: flex;
-  //   align-items: center;
-  //   justify-content: space-between;
-  //   width: 100%;
-  // }
+.header__logo {
+  padding-top: 12px;
+}
+.header__nav {
+  margin: 0 auto;
+}
 
-  .header__logo {
-    padding-top: 12px;
-  }
-  .header__nav {
-    margin: 0 auto;
-  }
+.header__list {
+  display: none;
+}
 
-  .header__list {
+.header__button {
+  @media screen and (max-width: 767px) {
     display: none;
   }
-
-  .header__button {
-    @media screen and (max-width: 767px) {
-      display: none;
-    }
-  }
-  .header__icon {
-    margin-left: 7px;
-  }
+}
+.header__icon {
+  margin-left: 7px;
 }
 
 @media screen and (min-width: 768px) {
+  .header__container {
+    padding: 0 32px;
+  }
+
   .header__logo {
     padding-top: 20px;
   }
@@ -59,6 +41,10 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .header__container {
+    padding: 0 16px;
+  }
+
   .header__logo {
     padding-top: 8px;
   }
@@ -75,6 +61,10 @@
     /* identical to box height */
 
     color: #fcfcfc;
+    &:hover,
+    &:focus {
+      color: #f8d24e;
+    }
   }
 
   .header__burger {

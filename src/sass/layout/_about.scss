@@ -1,5 +1,19 @@
 .about {
+  padding-bottom: 0px;
+  margin-bottom: -1px;
+}
+
+.about__container {
   background-color: #84a178;
+  color: #fcfcfc;
+  padding-top: 60px;
+  padding-bottom: 21px;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 53px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 90px;
+  }
 }
 .about__suptitle {
   @media screen and (max-width: 767px) {
@@ -26,14 +40,20 @@
   }
 }
 .about__paragraphs {
+  width: 220px;
+  margin-left: auto;
+  margin-right: auto;
   @media screen and (max-width: 767px) {
     text-align: center;
+    margin-top: 40px;
   }
   @media screen and (min-width: 768px) {
     width: 336px;
+    margin-top: 9px;
   }
   @media screen and (min-width: 1200px) {
     width: 463px;
+    margin-top: 93px;
   }
 }
 .about__text {
@@ -46,8 +66,64 @@
     margin-top: 40px;
   }
 }
-.about__text-bottom {
+.about__text-middle {
   @media screen and (max-width: 767px) {
     line-height: 1.58;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 194%;
+  }
+}
+.about__text-central {
+  @media screen and (min-width: 768px) {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+}
+.about__text-bottom {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    line-height: 194%;
+  }
+}
+.box {
+  position: absolute;
+  display: flex;
+  background: linear-gradient(
+      0deg,
+      rgba(248, 210, 78, 0.7),
+      rgba(248, 210, 78, 0.7)
+    ),
+    #d9d9d9;
+  box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
+  height: 278px;
+  width: 278px;
+  border-radius: 140.182px;
+
+  @media screen and (min-width: 768px) {
+    height: 334px;
+    width: 334px;
+    border-radius: 165.879px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    height: 500px;
+    width: 489px;
+    border-radius: 250px;
+  }
+}
+
+.about__img {
+  position: relative;
+  top: 21px;
+
+  @media screen and (min-width: 768px) {
+    top: 25px;
+  }
+  @media screen and (min-width: 1200px) {
+    top: 39px;
   }
 }
