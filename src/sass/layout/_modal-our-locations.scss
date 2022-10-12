@@ -1,0 +1,72 @@
+// задано стилі для вікна і кнопки закриття
+// padding задано такі:
+/*
+.modal {
+  padding: 28px;
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    padding: 32px 60px;
+  }
+}
+*/
+
+// нижче пишем стилі для контенту
+.modal-locations-title {
+  padding-bottom: 20px;
+
+  font-family: 'Seymour One';
+  font-weight: 400;
+  font-size: 16px;
+  // line-height: 24px;
+  line-height: 1.5;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 32px;
+
+    font-size: 20px;
+    // line-height: 28px;
+    line-height: 1.4;
+  }
+}
+.locations-img {
+  width: 224px;
+  height: 199px;
+  padding-bottom: 24px;
+  border-radius: 10px;
+
+  @media screen and (min-width: 768px) {
+    width: 448px;
+    height: 260px;
+    padding-bottom: 32px;
+  }
+}
+
+.modal-locations-link {
+  // position: fixed;
+  // width: 145px;
+  // height: 42px;
+  // left: 212px;
+  // padding-bottom: 0px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  // display: flex;
+  // align-items: center;
+  // text-align: center;
+  // justify-content: center;
+  // text-decoration: none;
+
+  // background-color: #f8d24e;
+  // border-radius: 10px;
+}
+// .modal-our-locations {
+//   width: 568px;
+//   height: 458px;
+// }

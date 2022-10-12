@@ -1,0 +1,78 @@
+.overlay__img {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+@media screen and (max-width: 767px) {
+  .overlay__img {
+    max-width: 480px;
+    height: 502px;
+    background-image: url(../images/header/mobile/ice.png),
+      url(../images/header/mobile/ellips.png);
+
+    background-size: 260px 315px, 328px 50px;
+    background-repeat: no-repeat;
+    background-position: left 44px top 238px, top 452px left 0;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+  screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .overlay__img {
+    background-image: url(../images/header/mobile/ice@2x.png),
+      url(../images/header/mobile/ellips@2x.png);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .overlay__img {
+    max-width: 768px;
+    height: 415px;
+    background-image: url(../images/header/tablet/ice-cream.png),
+      url(../images/header/tablet/ice.png),
+      url(../images/header/tablet/ellipse.png);
+
+    background-size: 152px, 357px 465px, 768px 67px;
+    background-repeat: no-repeat;
+    background-position: left 32px top 250px, left 378px top 8px,
+      top 347px left 0;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .overlay__img {
+    background-image: url(../images/header/tablet/ice-cream@2x.png),
+      url(../images/header/tablet/ice@2x.png),
+      url(../images/header/tablet/ellipse@2x.png);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .overlay__img {
+    max-width: 1200px;
+    height: 664px;
+    background-image: url(../images/header/desktop/ice-cream.png),
+      url(../images/header/desktop/ice.png),
+      url(../images/header/desktop/ellipse.png);
+
+    background-size: 225px, 650px 770px, 1200px 384px;
+    background-repeat: no-repeat;
+    background-position: left 17px top 374px, left 551px top -6px,
+      left 1px top 280px;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+  screen and (min-resolution: 192dpi) and (min-width: 1200px),
+  screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .overlay__img {
+    background-image: url(../images/header/desktop/ice-cream@2x.png),
+      url(../images/header/desktop/ice@2x.png),
+      url(../images/header/desktop/ellipse@2x.png);
+  }
+}

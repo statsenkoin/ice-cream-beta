@@ -1,0 +1,53 @@
+<div class="mobile__menu" data-menu>
+  <div class="container mobile__container">
+    <a href="" class="mobile__logo">
+      <picture>
+        <source
+          srcset="
+            ./images/header/tablet/logo.png    1x,
+            ./images/header/tablet/logo@2x.png 2x
+          "
+          media="(min-width: 768px)"
+          type="image/png"
+        />
+        <img src="./images/header/mobile/logo.png" alt="logo" /> </picture
+    ></a>
+
+    <button type="button" class="close__menu close__btn" data-menu-close>
+      <svg class="icon__cross">
+        <use href="./images/svg/icons.svg#icon-cross"></use>
+      </svg>
+    </button>
+    <div class="mobile__box">
+      <nav class="mobile__nav">
+        <ul class="mobile__list list">
+          <li class="mobile__item">
+            <a href="" class="link mobile__link">Home</a>
+          </li>
+          <li class="mobile__item">
+            <a href="" class="link mobile__link">How it’s made?</a>
+          </li>
+          <li class="mobile__item">
+            <a href="" class="link mobile__link">Our products</a>
+          </li>
+          <li class="mobile__item">
+            <a href="" class="link mobile__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- <button type="button" class="button header__btn mobile__btn">
+        Buy now
+      </button> -->
+      <button
+        type="button"
+        class="js-open-modal header__btn button mobile__btn"
+        data-modal="buy-now"
+      >
+        Buy now
+        <svg class="header__icon" width="12" height="12">
+          <use href="./images/svg/icons.svg#icon-arrow_btn"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</div>
