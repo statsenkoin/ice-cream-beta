@@ -1,0 +1,291 @@
+@charset "UTF-8";
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.section__title {
+  font-family: "Seymour One";
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.27;
+  text-align: center;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+  .section__title {
+    font-size: 34px;
+    line-height: 1.26;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section__title {
+    font-size: 36px;
+    line-height: 1.25;
+    letter-spacing: 0.06em;
+  }
+}
+
+.section__suptitle {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.22;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+@media screen and (min-width: 768px) {
+  .section__suptitle {
+    font-size: 22px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section__suptitle {
+    font-size: 30px;
+  }
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 320px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+.button {
+  border: none;
+  padding: 12px 4px;
+  font-weight: 600;
+  font-size: 14px;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.21;
+  border-radius: 10px;
+}
+
+.header__burger {
+  line-height: 0;
+  border: none;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.header__btn {
+  width: 152px;
+  background: rgb(248, 210, 78);
+  color: rgb(19, 19, 19);
+  cursor: pointer;
+}
+.header__btn:hover {
+  background: rgb(10, 136, 23);
+}
+.header__btn:focus {
+  color: rgb(252, 252, 252);
+}
+
+.hero__btn {
+  border: 2px solid #f8d24e;
+  padding: 12px 0;
+  width: 134px;
+  line-height: 1.28;
+  background: rgb(132, 161, 120);
+  color: rgb(19, 19, 19);
+  cursor: pointer;
+}
+.hero__btn:hover {
+  border-color: rgb(10, 136, 23);
+}
+.hero__btn:focus {
+  color: rgb(252, 252, 252);
+}
+@media screen and (max-width: 767px) {
+  .hero__btn {
+    min-width: 62px;
+    line-height: 1.25;
+    border-radius: 8px;
+    padding: 7px 0;
+  }
+}
+
+.hero__btn-link {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  border: none;
+  color: #f8d24e;
+}
+
+.hero__arrow {
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.products__button {
+  border: 20px solid tomato;
+  background-color: black;
+}
+
+.about__btn {
+  display: flex;
+  background: rgb(248, 210, 78);
+  cursor: pointer;
+  width: 164px;
+}
+.about__btn:hover {
+  background: rgb(10, 136, 23);
+}
+.about__btn:focus {
+  color: rgb(252, 252, 252);
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 0;
+  padding: 0;
+  line-height: 0;
+}
+@media screen and (max-width: 767px) {
+  .close-btn {
+    top: 8px;
+    right: 8px;
+  }
+}
+
+.submit__btn {
+  background: rgb(248, 210, 78);
+  color: rgb(19, 19, 19);
+  cursor: pointer;
+}
+.submit__btn:hover {
+  background: rgb(10, 136, 23);
+}
+.submit__btn:focus {
+  color: rgb(252, 252, 252);
+}
+
+.open-map__btn {
+  width: 145px;
+  background: rgb(248, 210, 78);
+  color: rgb(19, 19, 19);
+  cursor: pointer;
+}
+.open-map__btn:hover {
+  background: rgb(10, 136, 23);
+}
+.open-map__btn:focus {
+  color: rgb(252, 252, 252);
+}
+
+.footer__btn {
+  width: 196px;
+  background: rgb(248, 210, 78);
+  color: rgb(19, 19, 19);
+  cursor: pointer;
+}
+.footer__btn:hover {
+  background: rgb(10, 136, 23);
+}
+.footer__btn:focus {
+  color: rgb(252, 252, 252);
+}
+
+.footer__btn-link {
+  border: 2px solid #f8d24e;
+  padding: 12px 0;
+  width: 196px;
+  line-height: 1.28;
+  background: rgb(132, 161, 120);
+  color: rgb(19, 19, 19);
+  cursor: pointer;
+}
+.footer__btn-link:hover {
+  border-color: rgb(10, 136, 23);
+}
+.footer__btn-link:focus {
+  color: rgb(252, 252, 252);
+}
+
+/* Стилі для фона */
+.modal-overlay {
+  /* Приховуємо фон  */
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 8888;
+  transition: 0.3s all;
+}
+
+/* Стилі для модальних вікон */
+.modal {
+  /* Приховуємо вікна  */
+  opacity: 0;
+  visibility: hidden;
+  /*  Встановлюємо ширину вікна  */
+  width: 280px;
+  /*  Центруємо і задаємо z-index */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999; /* Повинен бути вищим ніж у фона*/
+  /*  Побічні стилі   */
+  box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding: 28px;
+  border: 2px solid #f8d24e;
+  border-radius: 10px;
+  background-color: #fcfcfc;
+  transition: 0.3s all;
+}
+
+/* Стилі для активних класів підкладки та вікна */
+.modal.active,
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Стилі для кнопки закриття */
+.modal__cross {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  fill: #131313;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 568px;
+    padding: 32px 60px;
+  }
+  .modal__cross {
+    width: 20px;
+    height: 20px;
+    top: 20px;
+    right: 20px;
+  }
+}/*# sourceMappingURL=index.css.map */
