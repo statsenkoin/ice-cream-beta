@@ -107,14 +107,10 @@
 
   &:hover {
     fill: #fcfcfc;
-    width: 32px;
-    height: 32px;
-    border-radius: 16px;
+    transform: scale(0.94);
   }
   &:focus {
-    width: 36px;
-    height: 36px;
-    border-radius: 18px;
+    transform: scale(1.05);
   }
 }
 // .footer-social__icon {
