@@ -86,6 +86,18 @@
     border: 2px;
     fill: #fcfcfc;
   }
+  .hero__icon:hover {
+    transform: scaleX(1.25);
+    // width: 50px;
+  }
+  .hero__arrow:focus .hero__icon {
+    transform: scaleX(1.25) scaleY(1.5);
+    // width: 50px;
+    // border: 3px;
+  }
+  .hero__arrow:focus {
+    outline: none;
+  }
 }
 
 @media screen and (min-width: 1200px) {
