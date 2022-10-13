@@ -24,43 +24,38 @@
     contact information below and we will reach out for additional information.
     We appreciate your patience.
   </p>
+       
   <form class="modal_form">
-    <label class="form-products-fild">
-      <input
-        class="products-fild-input"
-        type="text"
-        name="name"
-        placeholder="Name"
-        required
-        minlength="2"
-        pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
-        title="Username must be two words separated by space."
-      />
-    </label>
-    <label class="form-products-fild">
-      <input
-        class="products-fild-input"
-        type="tel"
-        name="tel"
-        placeholder="Phone"
-        pattern="[0-9]{3}-[0-9]{2}-[0-9]{2}-[0-9]{3}"
-        title="Enter the phone number in the format 099-00-00-000"
-        required
-      />
-    </label>
-    <label class="form-products-fild">
-      <input
-        class="products-fild-input"
-        type="email"
-        name="email"
-        placeholder="Email"
-        required
-      />
-    </label>
-    <label class="form-hero-fild">
-      <textarea class="fild-text" name="text" placeholder="Comment"></textarea>
-    </label>
-
-    <button class="modal_form_submit" type="submit">Submit</button>
+    <input class="buy-modal__name" type="text" name="user-name" minlength="3" maxlength="12"
+      title="In the name its possible to use only the letters of the Latin alphabet." pattern="^[a-zA-Z]+$"
+      placeholder="Name" required />
+    
+    <input class="buy-modal__name" type="tel" id="user-phone" name="user-phone"
+      pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="xxx-xxx-xx-xx" placeholder="Phone" required />
+    
+    <input class="buy-modal__name" type="email" name="email" placeholder="Email" required />
+    
+    <textarea class="buy-modal__comment" name="user-comment" placeholder="Comment"></textarea>
+    
+    <button type="submit" class="submit-button modal_form_submit">Submit</button>
+    
   </form>
 </div>
+
+
+<!-- <label class="form-products-fild">
+  <input class="products-fild-input" type="text" name="name" placeholder="Name" required minlength="2"
+    pattern="^[a-zA-Z]+\s[a-zA-Z]+$" title="Username must be two words separated by space." />
+</label>
+<label class="form-products-fild">
+  <input class="products-fild-input" type="tel" name="tel" placeholder="Phone"
+    pattern="[0-9]{3}-[0-9]{2}-[0-9]{2}-[0-9]{3}" title="Enter the phone number in the format 099-00-00-000" required />
+</label>
+<label class="form-products-fild">
+  <input class="products-fild-input" type="email" name="email" placeholder="Email" required />
+</label>
+<label class="form-hero-fild">
+  <textarea class="fild-text" name="text" placeholder="Comment"></textarea>
+</label>
+
+<button class="modal_form_submit" type="submit">Submit</button> -->
