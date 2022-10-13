@@ -13,6 +13,7 @@
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 8888;
   transition: 0.3s all;
+  
 }
 
 /* Стилі для модальних вікон */
@@ -49,6 +50,7 @@
 
   transition: 0.3s all;
   // ---------------------------------------------------
+  pointer-events: none;
 }
 
 /* Стилі для активних класів підкладки та вікна */
@@ -57,6 +59,7 @@
 .modal-overlay.active {
   opacity: 1;
   visibility: visible;
+  pointer-events: all;
 }
 
 /* Стилі для кнопки закриття */
@@ -85,4 +88,7 @@
       right: 20px;
     }
   }
+}
+.no-scroll {
+  overflow: hidden;
 }

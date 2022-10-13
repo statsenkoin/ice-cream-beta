@@ -32,7 +32,7 @@
   margin-bottom: 24px;
 }
 .modal_form_text {
-  // width: 448px;
+  // width: calc(100% - 60px);
   // height: 132px;
 
   // margin-left: auto;
@@ -47,6 +47,7 @@
   // color: #131313;
   line-height: 1.4;
   text-align: left;
+ 
 }
 
 .modal_form {
@@ -94,12 +95,10 @@
   resize: none;
 }
 .modal_form_submit {
-  width: 121px;
-  height: 42px;
+  
   margin-left: auto;
   margin-right: auto;
   margin-top: 32px;
 
-  background: #f8d24e;
-  border-radius: 10px;
+  
 }
