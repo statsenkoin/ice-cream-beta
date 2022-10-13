@@ -1,0 +1,155 @@
+.modal-team {
+  width: 90%;
+  max-width: 280px;
+  height: auto;
+  padding: 15px;
+  background-color: #84a178;
+
+  @media screen and (min-width: 768px) {
+    max-width: 700px;
+    height: 450px;
+    padding: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 815px;
+    height: 600px;
+    padding: 40px;
+  }
+}
+
+.team {
+  &__logo {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    width: 30px;
+    height: 33px;
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 35px;
+
+    font-family: 'Seymour One';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.4;
+    text-align: center;
+    color: #131313;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 60px;
+    column-gap: 12px;
+  }
+
+  &__mate {
+    position: relative;
+    width: 110px;
+    height: 135px;
+
+    background-color: #fcfcfc;
+    border: 2px solid #f8d24e;
+    box-shadow: 0px 5px 20px rgba(212, 20, 67, 0.8);
+    border-radius: 20px;
+  }
+
+  &__mate-elipse {
+    position: absolute;
+
+    width: 100px;
+    height: 100px;
+    top: -37px;
+    left: 3px;
+
+    z-index: 1;
+    background: linear-gradient(
+        0deg,
+        rgba(248, 210, 78, 0.7),
+        rgba(248, 210, 78, 0.7)
+      ),
+      #d9d9d9;
+    box-shadow: 0px 5px 20px rgba(153, 114, 23, 0.3);
+    border-radius: 50%;
+  }
+
+  &__mate-image {
+    position: absolute;
+    top: -7px;
+  }
+
+  &__mate-thumb {
+    margin-top: 67px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+  }
+
+  &__mate-pos {
+    font-weight: 400;
+  }
+
+  &__mate-name {
+    text-transform: uppercase;
+  }
+
+  @media screen and (min-width: 768px) {
+    &__logo {
+      left: 15px;
+      width: 40px;
+      height: 44px;
+    }
+
+    &__title {
+      margin-bottom: 25px;
+      font-size: 22px;
+    }
+
+    &__list {
+      row-gap: 50px;
+      column-gap: 20px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    &__logo {
+      left: 20px;
+      width: 45px;
+      height: 50px;
+    }
+
+    &__title {
+      margin-bottom: 40px;
+      font-size: 22px;
+    }
+
+    &__list {
+      column-gap: 20px;
+    }
+
+    &__mate {
+      width: 130px;
+      height: 170px;
+    }
+
+    &__mate-elipse {
+      width: 120px;
+      height: 120px;
+      top: -40px;
+    }
+
+    &__mate-thumb {
+      margin-top: 90px;
+      font-size: 16px;
+    }
+  }
+}

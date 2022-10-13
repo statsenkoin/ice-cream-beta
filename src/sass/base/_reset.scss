@@ -3,8 +3,6 @@ html {
 }
 
 body {
-  cursor: url('/src/images/custom--cursor.png'), auto;
-
   //----------------- Основний шрифт ----------------- /
 
   font-family: 'Montserrat', serif;
@@ -46,4 +44,8 @@ img {
 
 .link {
   text-decoration: none;
+}
+
+a {
+  cursor: url('/src/images/custom--cursor.png'), auto;
 }
