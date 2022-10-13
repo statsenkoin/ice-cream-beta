@@ -58,9 +58,8 @@
 }
 
 .mobile__link {
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 39px;
+  @include font(32px, 700, 39px);
+
   color: #fcfcfc;
   &:hover,
   &:focus {
@@ -85,9 +84,7 @@
     position: relative;
   }
   .mobile__link {
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 59px;
+    @include font(48px, 700, 59px);
   }
   .mobile__item:not(:last-child) {
     margin-bottom: 40px;
