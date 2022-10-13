@@ -1,0 +1,196 @@
+.footer {
+  background-color: #84a278;
+}
+
+.footer-wrap {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+}
+
+.footer__text-thin {
+  @media screen and (min-width: 320px) {
+    max-width: 234px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #fcfcfc;
+    text-transform: uppercase;
+    text-align: left;
+  }
+  @media screen and (min-width: 768px) {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 32px;
+    letter-spacing: 0.04em;
+    color: #fcfcfc;
+    text-transform: uppercase;
+    text-align: left;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 100%;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 37px;
+    letter-spacing: 0.04em;
+    color: #fcfcfc;
+    text-transform: uppercase;
+  }
+}
+
+.footer__text-bold {
+  @media screen and (min-width: 320px) {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 41px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #fcfcfc;
+  }
+  @media screen and (min-width: 768px) {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 59px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #fcfcfc;
+  }
+  @media screen and (min-width: 1200px) {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 71px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #fcfcfc;
+  }
+}
+
+.footer-social__list {
+  display: flex;
+  gap: 30px;
+
+  justify-content: flex-end;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 32px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 40px;
+  }
+}
+.footer-social__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 17px;
+  fill: #84a278;
+  background-color: #f8d24e;
+
+  transition-property: background-color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    fill: #fcfcfc;
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+  }
+  &:focus {
+    width: 36px;
+    height: 36px;
+    border-radius: 18px;
+  }
+}
+// .footer-social__icon {
+//   fill: #84a278;
+//   &:hover {
+//     fill: #fcfcfc;
+//   }
+// }
+.contact-text {
+  @media screen and (min-width: 320px) {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    color: #131313;
+  }
+  @media screen and (min-width: 768px) {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: 0.02em;
+    color: #131313;
+  }
+  @media screen and (min-width: 1200px) {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    color: #131313;
+  }
+}
+
+.tel-link {
+  color: #ffffff;
+}
+.rights {
+  @media screen and (min-width: 320px) {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: 0.02em;
+    color: #7a7a7a;
+    text-align: center;
+    border-top: 1px solid #e1e1e1;
+    padding: 16px 0 60px 0;
+  }
+  @media screen and (min-width: 768px) {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 186%;
+    letter-spacing: 0.02em;
+    color: #7a7a7a;
+    text-align: center;
+    border-top: 1px solid #e1e1e1;
+    padding: 14px 0;
+  }
+  @media screen and (min-width: 1200px) {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    color: #7a7a7a;
+    text-align: center;
+    border-top: 1px solid #e1e1e1;
+    padding: 11px 0;
+  }
+}

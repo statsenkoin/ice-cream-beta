@@ -13,3 +13,21 @@
 */
 
 // нижче пишем стилі для контенту
+.how-made__title {
+  margin-bottom: 20px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 32px;
+  }
+}
+.how-made__iframe {
+  width: 224px;
+  height: 199px;
+  @media screen and (min-width: 768px) {
+    width: 448px;
+    height: 205px;
+  }
+}
+.how-made__text {
+  line-height: 140%;
+  margin-top: 20px;
+}

@@ -1,13 +1,13 @@
 /* mobile 480px */
 .section-customer-reviews {
-  padding-top: 80px;
+  padding-top: 186px;
   padding-bottom: 394px;
   width: 100%;
-  max-width: 480px;
-  height: 940px;
+  // max-width: 320px;
+  height: 1046px;
   margin-left: auto;
   margin-right: auto;
-  background-image: url(../images/customer-reviews/bcg-mobile.png);
+  background-image: url(../images/customer-reviews/bcg-320.png);
 
   background-repeat: no-repeat;
   background-position: center;
@@ -18,7 +18,7 @@
   screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx) {
   .section-customer-reviews {
-    background-image: url(../images/customer-reviews/bcg-mobile@2x.png);
+    background-image: url(../images/customer-reviews/bcg-320@2x.png);
   }
 }
 
@@ -71,6 +71,19 @@
 
   color: #131313;
 }
+@media screen and (min-width: 321px) {
+  .section-customer-reviews {
+    background-image: url(../images/customer-reviews/bcg-768.png);
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .section-customer-reviews {
+      background-image: url(../images/customer-reviews/bcg-768@2x.png);
+    }
+  }
+}
 
 /* tablet 768px */
 @media screen and (min-width: 768px) {
@@ -78,17 +91,17 @@
     padding-top: 223px;
     padding-bottom: 383px;
 
-    max-width: 768px;
+    // max-width: 768px;
     height: 958px;
 
-    background-image: url(../images/customer-reviews/bcg-tablet.png);
+    background-image: url(../images/customer-reviews/bcg-1200.png);
   }
 
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
     .section-customer-reviews {
-      background-image: url(../images/customer-reviews/bcg-tablet@2x.png);
+      background-image: url(../images/customer-reviews/bcg-1200@2x.png);
     }
   }
 
@@ -124,17 +137,17 @@
     padding-top: 452px;
     padding-bottom: 207px;
 
-    max-width: 1200px;
+    // max-width: 1200px;
     height: 1020px;
 
-    background-image: url(../images/customer-reviews/bcg-desktop.png);
+    background-image: url(../images/customer-reviews/bcg-1920.png);
   }
 
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
     .section-customer-reviews {
-      background-image: url(../images/customer-reviews/bcg-desktop@2x.png);
+      background-image: url(../images/customer-reviews/bcg-1920@2x.png);
     }
   }
 
