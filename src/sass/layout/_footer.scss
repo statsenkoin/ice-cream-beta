@@ -1,5 +1,8 @@
 .footer {
   background-color: #84a278;
+  @media screen and (max-width: 767px) {
+    padding-top: 50px;
+  }
 }
 
 .footer-wrap {
