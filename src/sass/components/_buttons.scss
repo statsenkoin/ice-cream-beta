@@ -27,9 +27,12 @@
 
 .header__btn {
   width: 152px;
+  height: 42px;
+  gap: 7px;
   background: rgba(248, 210, 78, 1);
   color: rgba(19, 19, 19, 1);
   cursor: pointer;
+  z-index: 1;
 
   &:hover {
     background: rgba(10, 136, 23, 1);
@@ -38,7 +41,7 @@
     color: rgba(252, 252, 252, 1);
     background: rgba(10, 136, 23, 1);
     outline: 2px solid #0a8817;
-    border-color: transparent;
+    border-color: transparen;
   }
 }
 
@@ -188,7 +191,7 @@
   border-color: transparent;
   border-radius: 10px;
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  tion: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),transi
     color 300ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
