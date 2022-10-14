@@ -8,13 +8,14 @@
 @media screen and (max-width: 767px) {
   .overlay__img {
     max-width: 320px;
+    max-width: 480px;
     height: 502px;
     background-image: url(../images/header/mobile/ice.png),
       url(../images/header/mobile/ellips.png);
 
-    background-size: 260px 315px, 328px 50px;
+    background-size: 260px 315px, 100% 50px;
     background-repeat: no-repeat;
-    background-position: left 44px top 238px, top 452px left 0;
+    background-position: left 60% top 238px, top 452px left 0;
   }
 }
 
