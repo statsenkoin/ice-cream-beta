@@ -202,7 +202,7 @@
   }
 
   &:invalid:not(:placeholder-shown) {
-    background-color: rgb(241, 123, 123);
+    background-color: rgba(244, 37, 37, 0.5);
   }
  
   &:focus {
