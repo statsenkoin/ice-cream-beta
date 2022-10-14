@@ -41,7 +41,9 @@
   }
 }
 .about__paragraphs {
-  width: 220px;
+  min-width: 220px;
+
+  padding-inline: 25px;
   margin-left: auto;
   margin-right: auto;
   @media screen and (max-width: 767px) {
@@ -77,6 +79,7 @@
   }
 }
 .about__text-central {
+  letter-spacing: 0.04em;
   @media screen and (min-width: 768px) {
     margin-top: 8px;
     margin-bottom: 8px;
@@ -113,6 +116,9 @@
   left: 20px;
   z-index: 1;
   border-radius: 50%;
+
+  margin-inline: auto;
+  // padding-inline: 25px;
 
   @media screen and (min-width: 768px) {
     height: 334px;
