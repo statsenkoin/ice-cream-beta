@@ -236,6 +236,8 @@
 // CONTACTS BTN //
 
 .contacts__button-location {
+  display: flex;
+  gap: 6px;
   width: 196px;
   background: rgba(248, 210, 78, 1);
   color: rgba(19, 19, 19, 1);
@@ -253,6 +255,8 @@
 }
 
 .contacts__button-franchise {
+  display: flex;
+  gap: 6px;
   border: 2px solid #f8d24e;
   padding: 12px 0;
   width: 196px;
