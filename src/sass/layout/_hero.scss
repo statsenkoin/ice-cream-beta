@@ -10,6 +10,10 @@
   text-transform: uppercase;
 
   color: #fcfcfc;
+
+  @media screen and (max-width: 320px) {
+    font-size: 8vw;
+  }
 }
 .hero__btn {
   margin-top: 32px;

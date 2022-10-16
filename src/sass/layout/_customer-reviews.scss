@@ -24,6 +24,7 @@
 
 .swiper2 {
   width: 280px;
+
   height: 466px;
   margin-left: auto;
   margin-right: auto;
@@ -46,6 +47,9 @@
   margin-right: auto;
 }
 .swiper-slide__text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   max-width: 280px;
   height: 256px;
@@ -71,6 +75,23 @@
 
   color: #131313;
 }
+
+@media screen and (max-width: 320px) {
+  .swiper2 {
+    width: 88%;
+  }
+
+  .swiper-slide__text {
+    padding: 6vw 9vw;
+  }
+}
+
+// @media screen and (max-width: 768px) {
+//   .swiper {
+//     max-width: 280px;
+//   }
+// }
+
 @media screen and (min-width: 321px) {
   .section-customer-reviews {
     background-image: url(../images/customer-reviews/bcg-768.png);

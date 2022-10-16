@@ -22,6 +22,12 @@
     margin-right: auto;
   }
 
+  @media screen and (max-width: 320px) {
+    &__overlay {
+      padding-inline: 0;
+    }
+  }
+
   @media screen and (min-width: 768px) {
     height: 366px;
     // max-width: 768px;
@@ -80,7 +86,7 @@
   }
 
   &__map {
-    width: 212px;
+    // width: 212px;
     margin-top: 8px;
     line-height: 1.83;
     font-style: normal;
@@ -115,6 +121,12 @@
     // line-height: 18px;
     line-height: 1.5;
     color: #131313;
+  }
+
+  @media screen and (max-width: 320px) {
+    &__item {
+      width: 88vw;
+    }
   }
 
   @media screen and (max-width: 767px) {
