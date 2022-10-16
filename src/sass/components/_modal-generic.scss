@@ -1,8 +1,9 @@
-// body {
-//   &.modal-active {
-//     position: fixed;
-//   }
-// }
+body {
+  &.modal-active {
+    position: fixed;
+    width: 100%;
+  }
+}
 
 /* Стилі для фона */
 
