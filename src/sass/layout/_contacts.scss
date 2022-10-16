@@ -1,6 +1,6 @@
 .contacts {
   margin-bottom: -1px;
-  height: 1100px;
+  height: 1112px;
   //   max-width: 320px;
   margin-left: auto;
   margin-right: auto;
@@ -23,6 +23,8 @@
   }
 
   @media screen and (max-width: 320px) {
+    height: 1155px;
+
     &__overlay {
       padding-inline: 0;
     }
@@ -126,6 +128,9 @@
   @media screen and (max-width: 320px) {
     &__item {
       width: 88vw;
+    }
+    &__map {
+      width: 200px;
     }
   }
 
