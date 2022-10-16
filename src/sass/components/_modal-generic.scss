@@ -1,3 +1,9 @@
+body {
+  &.modal-active {
+    position: fixed;
+  }
+}
+
 /* Стилі для фона */
 
 .modal-overlay {
@@ -13,7 +19,6 @@
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 8888;
   transition: 0.3s all;
-  
 }
 
 /* Стилі для модальних вікон */
