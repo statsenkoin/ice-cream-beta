@@ -116,10 +116,9 @@
   width: 100%;
   max-width: 278px;
   height: 278px;
-  top: -243px;
-  left: 20px;
+
   margin-inline: auto;
-  z-index: 1;
+
   border-radius: 50%;
   background: linear-gradient(
       0deg,
@@ -136,13 +135,11 @@
   @media screen and (min-width: 768px) {
     height: 334px;
     max-width: 334px;
-    border-radius: 165.879px;
   }
 
   @media screen and (min-width: 1200px) {
-    height: 500px;
+    height: 489px;
     max-width: 489px;
-    border-radius: 250px;
   }
 }
 
