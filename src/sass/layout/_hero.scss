@@ -79,6 +79,7 @@
     @include font(12px, 400, 17px);
 
     color: #fcfcfc;
+    margin-bottom: 10px;
   }
 
   .hero__icon {
@@ -141,6 +142,7 @@
   .hero__lead {
     max-width: 200px;
     @include font(14px, 400, 20px);
+    margin-bottom: 25px;
   }
 }
 
